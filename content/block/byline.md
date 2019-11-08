@@ -1,4 +1,4 @@
-Min byline
+Byline
 ================
 
-Här skriver jag något.
+Här skriver jag något som blir en byline.
