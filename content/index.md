@@ -7,7 +7,7 @@ views:
         data:
             meta:
                 type: single
-                rounte: content/block/om-mumin
+                route: block/om-mumin
 
     flash:
         region: flash
@@ -23,7 +23,7 @@ views:
         data:
             meta:
                 type: single
-                rounte: content/block/byline
+                route: block/byline
 
 ---
 Min me-sida i kursen design
