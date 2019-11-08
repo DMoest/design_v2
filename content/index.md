@@ -1,5 +1,30 @@
 ---
 title: "Min fina titel"
+views:
+    mumin:
+        region: sidebar-right
+        template: anax/v2/block/default
+        data:
+            meta:
+                type: single
+                rounte: content/block/om-mumin
+
+    flash:
+        region: flash
+        template: anax/v2/image/default
+        data:
+            #src: "image/theme/tree.jpg?width=1100&height=150&crop-to-fit&area=0,0,30,0"
+            src: "img/mountains-1.jpg"
+
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                rounte: content/block/byline
+
 ---
 Min me-sida i kursen design
 =========================
