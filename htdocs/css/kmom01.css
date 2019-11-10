@@ -14,3 +14,241 @@
 .rm-navbar-max {
     display: none;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+body,
+.route-redovisning {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+.row {
+    clear: both;
+}
+
+.wrap-all {
+
+}
+
+/* --- SITE LOGO --- */
+.site-logo-text {
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo-text a {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    width: 100%;
+    padding: 2rem;
+    padding-left: 10%;
+}
+
+.site-logo-text-icon {
+    display: inline-block;
+    display: none;
+    margin: 1rem 0;
+}
+
+.site-logo {
+    display: none;
+}
+
+/* --- NAVBAR --- */
+.my-navbar {
+    list-style: none;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 2rem 10%;
+    background-color: #555;
+}
+
+.my-navbar li {
+    display: inline;
+}
+
+.my-navbar li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    padding-right: 1rem;
+    margin: 1rem 0.5rem 1rem 0;
+}
+
+/* GÖMT MENYALTERNATIV INNAN REDOVISNING */
+.rm-submenu-button {
+    display: none;
+}
+
+/* BREADCRUMB-LIST */
+.breadcrumb-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-list li {
+    display: inline-block;
+    list-style: none;
+    width: 20%;
+    padding: 2rem;
+    margin: 0;
+}
+
+.breadcrumb-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* --- REGION MAIN --- */
+.region-main {
+    display: inline-block;
+    width: 60%;
+    margin: 0 15%;
+}
+
+.region-main .article {
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.region-main .has-sidebar-left .has-sidebar {
+    display: inline-block;
+    float: right;
+    width: 50% !important;
+} 
+
+/* --- MENY REDOVISNING --- */
+.region-sidebar-left {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    padding-left: 5%;
+}
+
+.region-sidebar-left h4 {
+    display: inline-block;
+    color: #333;
+}
+
+.region-sidebar-left li {
+    list-style: none;
+    margin: 0.5rem;
+}
+
+.region-sidebar-left a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.next-previous { clear: both; }
+
+.next a,
+.previous a {
+    margin: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.next {
+    float: right;
+    margin-right: 4rem;
+}
+
+
+
+
+
+
+/* COVER PICTURE */
+.inner-wrap-flash img {
+    width: 100%;
+}
+
+.article {
+    display: inline;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.figure img {
+    width: 35rem;
+    float: right;
+    border-radius: 0.5rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.figure p {
+    clear: both;
+}
+
+/* --- BYLINE --- */
+
+.byline {
+    width: 74%;
+    margin: 5rem auto;
+    border: 0.05rem solid #999;
+    border-radius: 1rem;
+    padding: 2%;
+}
+
+.byline__img {
+    border-radius: 50rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+/* --- FOOTER --- */
+
+.region-footer {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #555;
+    padding: 1rem;
+}
+
+.footer-column {
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1.5%;
+}
+
+.footer-column-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.site-footer p {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+}
+

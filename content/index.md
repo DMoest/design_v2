@@ -1,20 +1,12 @@
 ---
 title: "Min fina titel"
 views:
-    mumin:
-        region: sidebar-right
-        template: anax/v2/block/default
-        data:
-            meta:
-                type: single
-                route: block/om-mumin
-
     flash:
         region: flash
         template: anax/v2/image/default
         data:
             #src: "image/theme/tree.jpg?width=1100&height=150&crop-to-fit&area=0,0,30,0"
-            src: "img/mountains-1.jpg"
+            src: "image/mountains-4.jpg"
 
     byline:
         region: main
@@ -26,12 +18,10 @@ views:
                 route: block/byline
 
 ---
-Min me-sida i kursen design
+Om mig
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
-
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig, när jag är liten"]
+[FIGURE src="image/cerahOchJag-1.jpg"]
 
 Mitt namn är Daniel Andersson och jag bor tillsammans med min familj i Västerås. Tillsammans är vi fyra plus hund, Natasa min fru, Cerah min son, Hulu min dotter, Astrid vår hund och jag. Fritiden spenderar vi gärna tillsammans med vänner och familj på äventyr, små som stora i när och fjärran men det svåra är att hitta tiden just nu. I skrivande stund och framåt på obestämd tid kan man säga att vi är i stor färändringsfas för det bättre. Sedan Hulu kom till världen ganska nyligen har det varit mycket att anpassa sig till och jag kämpar för att vidareutbilda mig här genom BTH som webbprogrammerare på distans samtidigt som jag arbetar fulltid för att kunna försörja familjen. Nyligen började jag arbeta på ett företag där jag sköter lagervaror och blandar färger till krockade bilar som ska repareras mfl arbetsuppgifter. Det kanske inte är mitt drömyrke men det försörjer familjen just nu och ärligt talat har jag arbetat i mycket sämre miljöer.
 
