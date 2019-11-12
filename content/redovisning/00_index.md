@@ -3,4 +3,4 @@
 Redovisningstexter
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/redovisning/00_index.md`.
+Här skriver vi redovisningstexter som svarar på några frågor ställda av lärare om respektive kursmoment, reflektioner och tankar studenten har om efter slutförda uppgifter. Välj vilket kursmoments i menyn till vänster.

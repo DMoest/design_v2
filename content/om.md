@@ -24,13 +24,11 @@ views:
                 type: single
                 route: block/om-mumin
 ---
-Om någonting
+Om kursen Design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Kursen Teknisk webbdesign och användbarhet, även kallad design, lär webbprogrammeraren att tekniskt förbereda sin webbplats för design och användbarhet. Kursen går vid Bleking Tekniska Högskola under läsperiod 2 höstterminen 2019.
 
-Skriv några kloka ord om kursen?
+Kursen har utgångspunkt i teknikerna som används i utveckling men är menad att orientera och förbereda studenten inom området design för att gynna ett lättare samarbete programmerare och designer mellan. Vidare i kursen ska studenten förbättra sin kännedom om användbarhet för tillämpningsområdet webb och i tillägg kommer några olika verktyg som kommer till god användning vid webbutveckling.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/nyepi-1.jpg]

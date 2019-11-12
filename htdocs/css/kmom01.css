@@ -29,12 +29,11 @@ html {
     overflow-x: hidden;
 }
 
-body,
-.route-redovisning {
+body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 0;
 }
 
@@ -77,10 +76,9 @@ body,
 /* --- NAVBAR --- */
 .my-navbar {
     list-style: none;
-    height: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    padding: 2rem 10%;
+    height: 4.4rem;
+    padding: 1rem 10%;
+    margin: 0;
     background-color: #555;
 }
 
@@ -93,6 +91,7 @@ body,
     text-decoration: none;
     color: #fff;
     width: 100%;
+    padding: 1rem 0;
     padding-right: 1rem;
     margin: 1rem 0.5rem 1rem 0;
 }
@@ -122,35 +121,60 @@ body,
 }
 
 /* --- REGION MAIN --- */
-.region-main {
-    display: inline-block;
-    width: 60%;
-    margin: 0 15%;
+/* OM Mig sidan */
+.route- .region-main {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.region-main .article {
+.route-om .region-main {
+    padding-left: 10%;
+}
+
+.route-style .region-main {
     display: inline-block;
-    width: 100%;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
     
 }
 
-.region-main .has-sidebar-left .has-sidebar {
+/* Redovisningssidan */
+.region-main {
+    display: inline-block;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.region-main .has-sidebar-left {
     display: inline-block;
     float: right;
-    width: 50% !important;
-} 
+    
+}
+
+.region-main .has-sidebar-right {
+    display: inline-block;
+    float: left;
+}
+
+.region-main .has-sidebar-right .has-sidebar .article {
+    width: 80%;
+    margin-right: 10%;
+}
 
 /* --- MENY REDOVISNING --- */
 .region-sidebar-left {
     display: inline-block;
     float: left;
-    width: 25%;
-    padding-left: 5%;
+    width: 30%;
+    padding-left: 10%;
 }
 
 .region-sidebar-left h4 {
     display: inline-block;
     color: #333;
+    padding-left: 15%;
 }
 
 .region-sidebar-left li {
@@ -164,7 +188,33 @@ body,
     color: #333;
 }
 
-.next-previous { clear: both; }
+/* Sidebar Right */
+.region-sidebar-right {
+    display: inline-block;
+    float: right;
+    width: 30%;
+    padding-right: 10%;
+}
+
+.region-sidebar-right h4 {
+    display: inline-block;
+    color: #333;
+}
+
+.region-sidebar-right li {
+    list-style: none;
+    margin: 0.5rem;
+}
+
+.region-sidebar-right a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.next-previous { 
+    clear: both;
+    margin: 4rem 0; }
 
 .next a,
 .previous a {
@@ -173,10 +223,7 @@ body,
     color: #333;
 }
 
-.next {
-    float: right;
-    margin-right: 4rem;
-}
+.next { float: right; }
 
 
 
@@ -189,17 +236,21 @@ body,
 }
 
 .article {
-    display: inline;
-    width: 80%;
+    display: inline-block;
+    width: 100%;
     margin: 0 auto;
 }
 
 .figure img {
-    width: 35rem;
+    width: 30rem;
     float: right;
     border-radius: 0.5rem;
-    margin-left: 3rem;
-    margin-bottom: 3rem;
+}
+
+.route-om .figure img {
+    float: left;
+    width: 30rem;
+    margin: 1rem 1rem 1rem 0;
 }
 
 .figure p {
