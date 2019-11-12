@@ -120,7 +120,8 @@ body {
 /* OM Mig sidan */
 .route- .region-main,
 .route-om .region-main,
-.route-style .region-main {
+.route-style .region-main,
+.route-testa .region-main {
     display: block;
     width: 60%;
     margin: 0 auto;
