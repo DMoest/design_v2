@@ -41,10 +41,6 @@ body {
     clear: both;
 }
 
-.wrap-all {
-
-}
-
 /* --- SITE LOGO --- */
 .site-logo-text {
     margin: 0;
@@ -122,28 +118,25 @@ body {
 
 /* --- REGION MAIN --- */
 /* OM Mig sidan */
-.route- .region-main {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.route-om .region-main {
-    padding-left: 10%;
-}
-
+.route- .region-main,
+.route-om .region-main,
 .route-style .region-main {
-    display: inline-block;
-    text-align: left;
-    width: 80%;
+    display: block;
+    width: 60%;
     margin: 0 auto;
-    
+    text-align: left;
+}
+
+ {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* Redovisningssidan */
-.region-main {
+.route-redovisning .region-main {
     display: inline-block;
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -241,10 +234,11 @@ body {
     margin: 0 auto;
 }
 
-.figure img {
+.route- .figure img {
     width: 30rem;
     float: right;
     border-radius: 0.5rem;
+    margin: 0 0 1rem 1rem;
 }
 
 .route-om .figure img {
@@ -258,19 +252,39 @@ body {
 }
 
 /* --- BYLINE --- */
+.byline figure {
+    margin: 3% 5%;
+    width:  20%;
+    height: 100%;
+}
+
+.byline figcaption {
+    width: 12rem;
+    margin: 2% auto;
+}
 
 .byline {
-    width: 74%;
+    width: 90%;
     margin: 5rem auto;
     border: 0.05rem solid #999;
     border-radius: 1rem;
-    padding: 2%;
+    display: flex;
+        columns: 2;
 }
 
 .byline__img {
+    display: block;
     border-radius: 50rem;
-    float: left;
-    margin-right: 2rem;
+    margin: 2% auto;
+    height: 10rem;
+    width: 10rem;
+}
+
+.byline p {
+    display: block;
+    width: 60%;
+    margin: 5% auto;
+    float: ;
 }
 
 /* --- FOOTER --- */

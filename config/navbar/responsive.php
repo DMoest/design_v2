@@ -52,7 +52,7 @@ return [
         [
             "text" => "Testsida",
             "url" => "testa",
-            "title" => "Lek med olika konstruktioner.",
+            "title" => "Testsidan för olika konstruktioner.",
         ],
     ],
 ];

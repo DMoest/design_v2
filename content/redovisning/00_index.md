@@ -3,4 +3,4 @@
 Redovisningstexter
 =========================
 
-Här skriver vi redovisningstexter som svarar på några frågor ställda av lärare om respektive kursmoment, reflektioner och tankar studenten har om efter slutförda uppgifter. Välj vilket kursmoments i menyn till vänster.
+Här skriver redovisar jag med svar på olika frågor ställda av lärare om respektive kursmoment, reflektioner och tankar jag som student har efter slutfört kursmoment. Var god välj kursmoment i menyn till vänster för att ta del av redovisningstexten.
