@@ -25,6 +25,6 @@ Kursen har utgångspunkt i teknikerna som används i utveckling men är menad at
 
 Se gärna <a href="https://dbwebb.se/kurser/design-v2" target="_blank">kursens hemsida</a> för mer detaljerad information.
 
-Ni kan även se mitt <a href="https://github.com/dbwebb-se/design" target="_blank">GitHub-repo</a> som presenterar arbetet jag gjort i kursen och hur det har tagit sin form.
+Ni kan även se mitt <a href="https://github.com/DMoest/design_v2" target="_blank">GitHub-repo</a> som presenterar arbetet jag gjort i kursen och hur det har tagit sin form.
 
 [FIGURE src=image/nyepi-1.jpg]
