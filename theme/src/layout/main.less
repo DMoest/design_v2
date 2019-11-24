@@ -1,0 +1,136 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/* --- VARIABLES (Layout-Default/Fallback) --- */
+/* Basic COLORS */
+@color_bg_light: #fff;
+@color_bg_dark: #555;
+@color_border: #999;
+@color_shadow: #777;
+
+/* Basic OTHERS */
+@std_borderRadius: 0.5rem;
+
+/* Item COLORS */
+@color_primary: rgb(36, 148, 86);
+@color_secondary: rgb(36, 148, 86);
+@color_tertiary: rgb(36, 148, 86);
+
+/* Variables TEXT */
+@text_color_light: #fff;
+@text_color_dark: #333;
+@text_color_grey: #555;
+@font_family_body: 'Dosis', sans-serif;
+/* Headers */
+@font_size_h1: 2.8rem;
+@font_size_h2: 2.4rem;
+@font_size_h3: 2rem;
+@font_size_h4: 2rem;
+@font_size_h5: 2rem;
+@font_size_h6: 2rem;
+@font_weight_h: 500;
+/* Paragraphs */
+@font_size_p: 1.8rem;
+@font_weight_p: 300;
+
+
+
+/* --- MAIN --- */
+.outer-wrap-main {
+    .inner-wrap {
+        .row {
+            position: relative;
+
+            .route-,
+            .route-om,
+            .route-style,
+            .route-testa {
+                .region-main {
+                    display: block;
+                    width: 60%;
+                    margin: 0 auto;
+                    text-align: left;
+
+                    /* --- ARTICLE --- */
+                    .article {
+                        display: block;
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 1rem 3rem;
+                    }
+                }
+            }
+
+            .route-redovisning,
+            .route-redovisning-kmom01,
+            .route-redovisning-kmom02,
+            .route-redovisning-kmom03,
+            .route-redovisning-kmom04,
+            .route-redovisning-kmom05,
+            .route-redovisning-kmom06,
+            .route-redovisning-kmom010, {
+                .region-main {
+                    display: inline-block;
+                    width: 60%;
+                    margin: 0 auto;
+                    text-align: left;
+
+                        /* --- ARTICLE --- */
+                        .article {
+                            display: inline-block;
+                            width: 100%;
+                            margin: 0 auto;
+                            padding: 1rem 3rem;
+            }
+                }
+            }
+
+
+
+
+        }
+
+        .has-sidebar-left {
+            display: inline-block;
+        }
+
+        .has-sidebar-right {
+            display: inline-block;
+            float: left;
+        }
+    }
+}
+
+
+.route- {
+    .figure {
+
+        img {
+            width: 30rem;
+            float: right;
+            border-radius: 0.5rem;
+            margin: 0 0 1rem 1rem;
+        }
+    }
+}
+
+.route-om {
+    .figure {
+
+        img {
+            float: left;
+            width: 30rem;
+            margin: 1rem 1rem 1rem 0;
+        }
+    }
+}
+
+
+
+.figure { 
+    p {
+        clear: both;
+    }
+}

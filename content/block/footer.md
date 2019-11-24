@@ -1,1 +1,1 @@
-Copyright © 2019 och Daniel Andersson.
+Copyright © 2019 Daniel Andersson.

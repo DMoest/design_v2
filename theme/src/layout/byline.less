@@ -1,0 +1,66 @@
+/* --- VARIABLES (Byline-Default/Fallback) --- */
+/* Basic COLORS */
+@color_bg_light: #fff;
+@color_bg_dark: #555;
+@color_border: #999;
+@color_shadow: #777;
+
+/* Basic OTHERS */
+@std_borderRadius: 0.5rem;
+
+/* Item COLORS */
+@color_primary: rgb(36, 148, 86);
+@color_secondary: rgb(36, 148, 86);
+@color_tertiary: rgb(36, 148, 86);
+
+/* Variables TEXT */
+@text_color_light: #fff;
+@text_color_dark: #333;
+@text_color_grey: #555;
+@font_family_body: 'Dosis', sans-serif;
+/* Headers */
+@font_size_h1: 2.8rem;
+@font_size_h2: 2.4rem;
+@font_size_h3: 2rem;
+@font_size_h4: 2rem;
+@font_size_h5: 2rem;
+@font_size_h6: 2rem;
+@font_weight_h: 500;
+/* Paragraphs */
+@font_size_p: 1.8rem;
+@font_weight_p: 300;
+
+/* --- BYLINE --- */
+.byline {
+    width: 90%;
+    margin: 5rem auto;
+    border: 0.05rem solid @color_border;
+    border-radius: @std_borderRadius;
+    display: flex;
+    columns: 2;
+
+    p {
+        display: block;
+        width: 60%;
+        margin: 5% auto;
+    }
+
+    figure {
+        margin: 3% 5%;
+        width:  20%;
+        height: 100%;
+
+        .byline__img {
+            display: block;
+            border-radius: 50rem;
+            margin: 2% auto;
+            height: 10rem;
+            width: 10rem;
+        }
+
+        figcaption {
+            width: 12rem;
+            margin: 2% auto;
+        }
+    }
+}

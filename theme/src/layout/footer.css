@@ -1,0 +1,32 @@
+/* --- VARIABLES (Footer-Default/Fallback) --- */
+/* Basic COLORS */
+/* Basic OTHERS */
+/* Item COLORS */
+/* Variables TEXT */
+/* Headers */
+/* Paragraphs */
+/* --- FOOTER --- */
+.region-footer {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #555;
+  padding: 1rem;
+}
+.footer-column {
+  float: left;
+  width: 30%;
+  margin: 0 auto;
+  padding: 1.5%;
+}
+.footer-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.site-footer p {
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}

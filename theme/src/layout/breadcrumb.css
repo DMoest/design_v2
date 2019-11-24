@@ -1,0 +1,23 @@
+/* --- VARIABLES (Navbar-Default/Fallback) --- */
+/* Basic COLORS */
+/* Basic OTHERS */
+/* Item COLORS */
+/* Variables TEXT */
+/* Headers */
+/* Paragraphs */
+/* --- BREADCRUMB-LIST --- */
+.breadcrumb-list ul {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb-list li {
+  display: inline-block;
+  list-style: none;
+  width: 20%;
+  padding: 2rem;
+  margin: 0;
+}
+.breadcrumb-list li a {
+  text-decoration: none;
+  color: #333;
+}

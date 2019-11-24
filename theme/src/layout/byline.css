@@ -1,0 +1,37 @@
+/* --- VARIABLES (Byline-Default/Fallback) --- */
+/* Basic COLORS */
+/* Basic OTHERS */
+/* Item COLORS */
+/* Variables TEXT */
+/* Headers */
+/* Paragraphs */
+/* --- BYLINE --- */
+.byline {
+  width: 90%;
+  margin: 5rem auto;
+  border: 0.05rem solid #999;
+  border-radius: 0.5rem;
+  display: flex;
+  columns: 2;
+}
+.byline p {
+  display: block;
+  width: 60%;
+  margin: 5% auto;
+}
+.byline figure {
+  margin: 3% 5%;
+  width: 20%;
+  height: 100%;
+}
+.byline figure .byline__img {
+  display: block;
+  border-radius: 50rem;
+  margin: 2% auto;
+  height: 10rem;
+  width: 10rem;
+}
+.byline figure figcaption {
+  width: 12rem;
+  margin: 2% auto;
+}

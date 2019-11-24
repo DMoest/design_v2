@@ -1,0 +1,106 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+/* --- VARIABLES (Base-Default/Fallback) --- */
+/* Basic COLORS */
+@color_bg_light: #fff;
+@color_bg_dark: #555;
+@color_border: #999;
+@color_shadow: #777;
+
+/* Basic OTHERS */
+@std_borderRadius: 0.5rem;
+
+/* Item COLORS */
+@color_primary: rgb(36, 148, 86);
+@color_secondary: rgb(36, 148, 86);
+@color_tertiary: rgb(36, 148, 86);
+
+/* Variables TEXT */
+@text_color_light: #fff;
+@text_color_dark: #333;
+@text_color_grey: #555;
+@font_family_body: 'Dosis', sans-serif;
+/* Headers */
+@font_size_h1: 2.8rem;
+@font_size_h2: 2.4rem;
+@font_size_h3: 2rem;
+@font_size_h4: 2rem;
+@font_size_h5: 2rem;
+@font_size_h6: 2rem;
+@font_weight_h: 500;
+/* Paragraphs */
+@font_size_p: 1.8rem;
+@font_weight_p: 300;
+
+
+
+/* --- BASICS --- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* TEXT */
+    font-family: 'Dosis', sans-serif;
+    font-size: 62.5%; /* Declaration of ROOT EMs */
+    font-weight: @font_weight_p;
+    color: @text_color_dark;
+    width: 100%;
+    background-color: @color_bg_light;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    h1 {
+        font-size: @font_size_h1;
+        font-weight: @font_weight_h;
+    }
+
+    h2 {
+        font-size: @font_size_h2;
+        font-weight: @font_weight_h;
+    }
+
+    h3 {
+        font-size: @font_size_h3;
+        font-weight: @font_weight_h;
+    }
+
+    h4 {
+        font-size: @font_size_h4;
+        font-weight: @font_weight_h;
+    }
+
+    h5 {
+        font-size: @font_size_h5;
+        font-weight: @font_weight_h;
+    }
+
+    h6 {
+        font-size: @font_size_h6;
+        font-weight: @font_weight_h;
+    }
+
+    p {
+        font-size: @font_size_p;
+        font-weight: @font_weight_p;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: @font_size_p;
+    color: @text_color_dark;
+    background-color: @color_bg_light;
+    // font: 100.01%/1 @font_family_body;
+}
+
+.row {
+    clear: both;
+}

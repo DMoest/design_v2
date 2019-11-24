@@ -1,0 +1,18 @@
+/* --- VARIABLES (Navbar-Default/Fallback) --- */
+/* Basic COLORS */
+/* Basic OTHERS */
+/* Item COLORS */
+/* Variables TEXT */
+/* Headers */
+/* Paragraphs */
+/* --- FLASH --- */
+.inner-wrap {
+  margin: 0 auto;
+}
+.inner-wrap img {
+  width: 100%;
+}
+/* --- COVER PICTURE --- */
+.inner-wrap-flash img {
+  width: 100%;
+}
