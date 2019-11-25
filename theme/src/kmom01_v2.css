@@ -5041,10 +5041,11 @@ header .region-header-col-1 .site-logo-text {
 header .region-header-col-1 .site-logo-text a {
   cursor: pointer;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  color: #555;
+  color: #333;
   width: 100%;
   padding: 2rem;
   padding-left: 10%;
@@ -5069,21 +5070,21 @@ header .region-header-col-1 .site-logo-text a .site-logo-text-icon {
   background-color: #555;
   padding: 1rem;
 }
-.footer-column {
-  float: left;
-  width: 30%;
-  margin: 0 auto;
-  padding: 1.5%;
-}
-.footer-column-wrapper {
+.region-footer .footer-column-wrapper {
   width: 80%;
   margin: 0 auto;
 }
-.site-footer p {
+.region-footer .footer-column-wrapper .footer-column {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  margin: 1.5%;
+}
+.region-footer .site-footer p {
   clear: both;
   width: 100%;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem;
 }
 /* --- VARIABLES (Navbar-Default/Fallback) --- */
 /* Basic COLORS */

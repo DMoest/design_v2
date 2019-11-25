@@ -5,30 +5,4 @@
 /* Variables TEXT */
 /* Headers */
 /* Paragraphs */
-/* --- NAVBAR --- */
-.my-navbar {
-  list-style: none;
-  height: 4.4rem;
-  padding: 1rem 10%;
-  margin: 0;
-  background-color: #555;
-}
-.my-navbar li {
-  display: inline;
-}
-.my-navbar li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-  width: 100%;
-  padding: 1rem 0;
-  padding-right: 1rem;
-  margin: 1rem 0.5rem 1rem 0;
-}
 /* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-.rm-navbar-max {
-  display: none;
-}

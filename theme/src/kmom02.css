@@ -5136,11 +5136,14 @@ body {
 /* Variables TEXT */
 /* Headers */
 /* Paragraphs */
-/* --- MIXINs --- */
 /* --- HEADER --- */
 .outer-wrap-header {
   background-color: #555;
-  overflow: auto;
+}
+.outer-wrap-header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .outer-wrap-header .inner-wrap-header {
   max-width: 100%;

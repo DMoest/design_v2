@@ -14,19 +14,19 @@
   background-color: #555;
   padding: 1rem;
 }
-.footer-column {
-  float: left;
-  width: 30%;
-  margin: 0 auto;
-  padding: 1.5%;
-}
-.footer-column-wrapper {
+.region-footer .footer-column-wrapper {
   width: 80%;
   margin: 0 auto;
 }
-.site-footer p {
+.region-footer .footer-column-wrapper .footer-column {
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  margin: 1.5%;
+}
+.region-footer .site-footer p {
   clear: both;
   width: 100%;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem;
 }

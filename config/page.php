@@ -35,8 +35,8 @@ return [
             "template" => "anax/v2/header/site_logo",
             "data" => [
                 "class" => "large",
-                "siteLogo"      => "image/theme/leaf_256x256.png",
-                "siteLogoAlt"   => "Löv",
+                "siteLogo"      => "image/theme/Me-sidan_logo-vit.png",
+                "siteLogoAlt"   => "Logo",
             ],
         ],
         [
