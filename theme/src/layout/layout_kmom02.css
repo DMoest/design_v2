@@ -26,7 +26,7 @@
   display: inline-block;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 3rem;
+  padding: 4rem 0;
 }
 .outer-wrap-main .inner-wrap .row .region-main .article p {
   margin: 1rem 0;
@@ -38,13 +38,6 @@
 }
 .outer-wrap-main .inner-wrap .row .has-sidebar-left {
   display: inline-block;
-}
-.outer-wrap-main .inner-wrap .row .region-sidebar-left {
-  display: inline-block;
-  float: left;
-  width: 23.3%;
-  padding-top: 3rem;
-  padding-left: 10%;
 }
 .outer-wrap-main .inner-wrap .row .region-sidebar-left h4 {
   display: inline-block;
@@ -117,10 +110,7 @@
   color: #555;
 }
 .route- .figure img {
-  width: 30rem;
-  float: right;
   border-radius: 0.5rem;
-  margin: 0 0 1rem 1rem;
 }
 .route-om .figure img {
   float: left;

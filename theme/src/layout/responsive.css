@@ -1,7 +1,195 @@
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
+/* PHONE SIZE SCREENS (0 - 680px width) */
+@media screen and (min-width: 0px) and (max-width: 680px) {
+  /* --- HEADER --- */
+  .outer-wrap-header .inner-wrap-header .row .region-header {
+    /* SITE-LOGO & TEXT */
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-1 {
+    width: 40%;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-1 .site-logo-text {
+    display: none;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-1 .site-logo-text a {
+    display: none;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-2 {
+    width: 20%;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-2 .rm-desktop {
+    display: none;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-3 {
+    width: 40%;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-3 .rm-desktop {
+    display: none;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-3 .rm-small {
+    display: block;
+  }
+  .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-3 .rm-small .rm-button {
+    margin: 2.5rem;
+  }
+  /* --- MAIN --- */
+  .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-sidebar-left h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-sidebar-left ul {
+    text-align: center;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-sidebar-left ul li {
+    margin: 1rem auto;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main {
+    width: 90%;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+    clear: both;
+    width: 100%;
+    margin: 1rem auto;
+  }
+}
+/* PHONE & IPAD SIZE SCREENS (681 - 968px width) */
+@media screen and (min-width: 681px) and (max-width: 968px) {
+  .outer-wrap-main .inner-wrap-main .row .region-main {
+    width: 75%;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+    float: right;
+    width: 30rem;
+    margin: 0 0 1rem 1rem;
+  }
+  .region-header {
+    /* SITE-LOGO & TEXT */
+    /* NAVBAR */
+    /* HAMBURGER MENU */
+  }
+  .region-header .region-header-col-1 {
+    width: 40%;
+  }
+  .region-header .region-header-col-1 .site-logo-text {
+    display: inline-block;
+  }
+  .region-header .region-header-col-1 .site-logo-text a {
+    display: inline-block;
+  }
+  .region-header .region-header-col-2 {
+    width: 40%;
+  }
+  .region-header .region-header-col-2 .rm-desktop {
+    display: none;
+  }
+  .region-header .region-header-col-3 {
+    width: 20%;
+  }
+  .region-header .region-header-col-3 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 .rm-button {
+    margin: 2.5rem;
+  }
+  .rm-small {
+    display: none;
+  }
+  .site-logo {
+    display: none;
+  }
+}
+/* IPAD & DESKTOP SIZE SCREENS (969 - 1199px width) */
+@media screen and (min-width: 969px) and (max-width: 1199px) {
+  .outer-wrap-main .inner-wrap-main .row .region-main {
+    width: 60%;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+    float: right;
+    width: 30rem;
+    margin: 0 0 1rem 1rem;
+  }
+  .region-header {
+    /* SITE-LOGO & TEXT */
+    /* NAVBAR */
+    /* HAMBURGER MENU */
+  }
+  .region-header .region-header-col-1 {
+    width: 20%;
+  }
+  .region-header .region-header-col-1 .site-logo-text {
+    display: inline-block;
+  }
+  .region-header .region-header-col-1 .site-logo-text a {
+    display: inline-block;
+  }
+  .region-header .region-header-col-2 {
+    width: 60%;
+  }
+  .region-header .region-header-col-2 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 {
+    width: 20%;
+  }
+  .region-header .region-header-col-3 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 .rm-button {
+    margin: 2.5rem;
+  }
+  .rm-small {
+    display: none;
+  }
+  .site-logo {
+    display: none;
+  }
+}
+/* DESKTOP SIZE SCREENS (1200px+ width) */
+@media screen and (min-width: 1200px) {
+  .outer-wrap-main .inner-wrap-main .row .region-main {
+    width: 60%;
+  }
+  .region-header {
+    /* SITE-LOGO & TEXT */
+    /* NAVBAR */
+    /* HAMBURGER MENU */
+  }
+  .region-header .region-header-col-1 {
+    width: 20%;
+  }
+  .region-header .region-header-col-1 .site-logo-text {
+    display: inline-block;
+  }
+  .region-header .region-header-col-1 .site-logo-text a {
+    display: inline-block;
+  }
+  .region-header .region-header-col-2 {
+    width: 60%;
+  }
+  .region-header .region-header-col-2 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 {
+    width: 20%;
+  }
+  .region-header .region-header-col-3 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 .rm-button {
+    margin: 2.5rem;
+  }
+  .rm-small {
+    display: none;
+  }
   .site-logo {
     display: none;
   }

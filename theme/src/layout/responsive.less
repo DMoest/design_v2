@@ -2,7 +2,297 @@
  * Layout for responsive style through media queries.
  */
 
-@media screen and (max-width: 1500px) {
+
+/* PHONE SIZE SCREENS (0 - 680px width) */
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    /* --- HEADER --- */
+    .outer-wrap-header {
+        .inner-wrap-header {
+            .row {
+                .region-header {
+
+                    /* SITE-LOGO & TEXT */
+                    .region-header-col-1 {
+                        width: 40%;
+
+                        .site-logo-text {
+                            display: none;
+
+                            a {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .region-header-col-2 {
+                        width: 20%;
+
+                        .rm-desktop {
+                            display: none;
+                        }
+                    }
+
+                    .region-header-col-3 {
+                        width: 40%;
+
+                        .rm-desktop {
+                            display: none;
+                        }
+
+                        .rm-small {
+                            display: block;
+
+                            .rm-button {
+                                margin: 2.5rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+    /* --- MAIN --- */
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+                .region-sidebar-left {
+                    display: block;
+                    clear: both;
+                    width: 100%;
+                    margin: 1rem auto;
+                    padding: 0;
+
+                    h4 {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    ul {
+                        text-align: center;
+
+                        li {
+                            margin: 1rem auto;
+                        }
+                    }
+                }
+                
+                .region-main {
+                    width: 90%;
+
+                    .figure {
+
+                        img {
+                            clear: both;
+                            width: 100%;
+                            margin: 1rem auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/* PHONE & IPAD SIZE SCREENS (681 - 968px width) */
+@media screen and (min-width: 681px) and (max-width: 968px) {
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+
+                .region-main {
+                    width: 75%;
+
+                    .figure {
+
+                        img {
+                            float: right;
+                            width: 30rem;
+                            margin: 0 0 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .region-header {
+
+        /* SITE-LOGO & TEXT */
+        .region-header-col-1 {
+            width: 40%;
+
+            .site-logo-text {
+                display: inline-block;
+
+                a {
+                   display: inline-block;
+                }
+            }
+        }
+
+        /* NAVBAR */
+        .region-header-col-2 {
+            width: 40%;
+
+            .rm-desktop {
+                display: none;
+            }
+        }
+
+        /* HAMBURGER MENU */
+        .region-header-col-3 {
+            width: 20%;
+            
+            .rm-desktop {
+                display: block;
+            }
+            
+            .rm-button {
+                margin: 2.5rem;
+            }
+        }
+    }
+    
+    .rm-small {
+        display: none;
+    }
+
+    .site-logo {
+        display: none;
+    }
+}
+
+
+
+/* IPAD & DESKTOP SIZE SCREENS (969 - 1199px width) */
+@media screen and (min-width: 969px) and (max-width: 1199px) {
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+                .region-main {
+                    width: 60%;
+
+                    .figure {
+
+                        img {
+                            float: right;
+                            width: 30rem;
+                            margin: 0 0 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .region-header {
+
+        /* SITE-LOGO & TEXT */
+        .region-header-col-1 {
+            width: 20%;
+
+            .site-logo-text {
+                display: inline-block;
+
+                a {
+                   display: inline-block;
+                }
+            }
+        }
+
+        /* NAVBAR */
+        .region-header-col-2 {
+            width: 60%;
+
+            .rm-desktop {
+                display: block;
+            }
+        }
+
+        /* HAMBURGER MENU */
+        .region-header-col-3 {
+            width: 20%;
+            
+            .rm-desktop {
+                display: block;
+            }
+            
+            .rm-button {
+                margin: 2.5rem;
+            }
+        }
+    }
+    
+    .rm-small {
+        display: none;
+    }
+
+    .site-logo {
+        display: none;
+    }
+}
+
+/* DESKTOP SIZE SCREENS (1200px+ width) */
+@media screen and (min-width: 1200px) {
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+                .region-main {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    .region-header {
+
+        /* SITE-LOGO & TEXT */
+        .region-header-col-1 {
+            width: 20%;
+
+            .site-logo-text {
+                display: inline-block;
+
+                a {
+                   display: inline-block;
+                }
+            }
+        }
+
+        /* NAVBAR */
+        .region-header-col-2 {
+            width: 60%;
+
+            .rm-desktop {
+                display: block;
+            }
+        }
+
+        /* HAMBURGER MENU */
+        .region-header-col-3 {
+            width: 20%;
+            
+            .rm-desktop {
+                display: block;
+            }
+            
+            .rm-button {
+                margin: 2.5rem;
+            }
+        }
+    }
+    
+    .rm-small {
+        display: none;
+    }
+
     .site-logo {
         display: none;
     }

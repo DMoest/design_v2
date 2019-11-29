@@ -74,6 +74,9 @@ html p {
   font-size: 1.8rem;
   font-weight: 300;
 }
+html img {
+  max-width: 100%;
+}
 body {
   width: 100%;
   height: 100%;
@@ -224,7 +227,18 @@ body {
 /**
  * Layout for responsive style through media queries.
  */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 680px) {
+  .rm-small {
+    display: block;
+  }
+  .rm-navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .rm-small {
+    display: none;
+  }
   .site-logo {
     display: none;
   }
@@ -4989,40 +5003,6 @@ template {
 /* IMPORT Google Fonts */
 /* IMPORT Base */
 /* IMPORT Modules */
-/* --- VARIABLES (Navbar-Default/Fallback) --- */
-/* Basic COLORS */
-/* Basic OTHERS */
-/* Item COLORS */
-/* Variables TEXT */
-/* Headers */
-/* Paragraphs */
-/* --- NAVBAR --- */
-.my-navbar {
-  list-style: none;
-  height: 4.4rem;
-  padding: 1rem 10%;
-  margin: 0;
-  background-color: #555;
-}
-.my-navbar li {
-  display: inline;
-}
-.my-navbar li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-  width: 100%;
-  padding: 1rem 0;
-  padding-right: 1rem;
-  margin: 1rem 0.5rem 1rem 0;
-}
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-.rm-navbar-max {
-  display: none;
-}
 /* --- VARIABLES (Header-Default/Fallback) --- */
 /* Basic COLORS */
 /* Basic OTHERS */
@@ -5030,29 +5010,98 @@ template {
 /* Variables TEXT */
 /* Headers */
 /* Paragraphs */
+/* --- MIXINs --- */
 /* --- HEADER --- */
-header .region-header-col-1 .site-logo {
-  display: none;
+.outer-wrap-header {
+  background-color: #555;
+  overflow: auto;
 }
-header .region-header-col-1 .site-logo-text {
-  margin: 0;
-  padding: 0;
+.outer-wrap-header .inner-wrap-header {
+  max-width: 100%;
+  height: 6rem;
 }
-header .region-header-col-1 .site-logo-text a {
+.outer-wrap-header .inner-wrap-header .region-header {
+  width: 100%;
+  height: 100%;
+  /* --- NAVBAR --- */
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 {
+  display: block;
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo {
+  display: block;
+  float: left;
+  width: 40%;
+  margin: 5%;
+  color: #fff;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo-text {
+  display: inline-block;
+  width: auto;
+  padding: 12.5% 0;
+  margin: 5%;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo-text a {
   cursor: pointer;
   display: inline-block;
   font-size: 2.8rem;
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
-  color: #333;
-  width: 100%;
-  padding: 2rem;
-  padding-left: 10%;
+  color: #fff;
 }
-header .region-header-col-1 .site-logo-text a .site-logo-text-icon {
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo-text a .site-logo-text-icon {
   display: none;
-  margin: 1rem 0;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 {
+  display: block;
+  width: 60%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar {
+  display: block;
+  width: 100%;
+  margin: auto 0;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar .my-navbar {
+  display: block;
+  list-style: none;
+  width: 80%;
+  margin: 5rem auto;
+  padding: 0;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar .my-navbar li {
+  display: inline-block;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar .my-navbar li a {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar .my-navbar .rm-submenu-button {
+  display: none;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-3 {
+  display: block;
+  width: 20%;
+  float: left;
+}
+.outer-wrap-header .inner-wrap-header .region-header .region-header-col-3 .rm-button {
+  color: #fff;
+  margin: 3rem;
 }
 /* --- VARIABLES (Footer-Default/Fallback) --- */
 /* Basic COLORS */
