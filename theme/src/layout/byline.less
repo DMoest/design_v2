@@ -30,37 +30,29 @@
 @font_size_p: 1.8rem;
 @font_weight_p: 300;
 
+
+
 /* --- BYLINE --- */
 .byline {
-    width: 90%;
-    margin: 5rem auto;
+    overflow: auto;
     border: 0.05rem solid @color_border;
     border-radius: @std_borderRadius;
-    display: flex;
-    columns: 2;
-
-    p {
-        display: block;
-        width: 60%;
-        margin: 5% auto;
-    }
+    margin: 5rem auto;
 
     figure {
-        margin: 3% 5%;
-        width:  20%;
-        height: 100%;
+        display: block;
 
         .byline__img {
             display: block;
             border-radius: 50rem;
-            margin: 2% auto;
-            height: 10rem;
             width: 10rem;
+            height: 10rem;
+            margin: 0 auto;
         }
 
         figcaption {
             width: 12rem;
-            margin: 2% auto;
+            margin: 1rem auto;
         }
-    }
+    } 
 }

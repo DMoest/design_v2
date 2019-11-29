@@ -34,6 +34,11 @@
   .outer-wrap-header .inner-wrap-header .row .region-header .region-header-col-3 .rm-small .rm-button {
     margin: 2.5rem;
   }
+  /* --- BREADCRUMBs --- */
+  .region-breadcrumb .breadcrumb-list ul li {
+    width: 49%;
+    padding: 0.5rem;
+  }
   /* --- MAIN --- */
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
     display: block;
@@ -45,152 +50,429 @@
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left h4 {
     width: 100%;
     text-align: center;
+    margin: 1rem;
   }
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left ul {
     text-align: center;
   }
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left ul li {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
   .outer-wrap-main .inner-wrap-main .row .region-main {
+    display: block;
     width: 90%;
+    margin: 0 auto;
+    /* --- BYLINE --- */
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main article {
+    padding: 1rem 0;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .next-previous {
+    margin: 2rem 0;
   }
   .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
     clear: both;
     width: 100%;
     margin: 1rem auto;
   }
+  .outer-wrap-main .inner-wrap-main .row .region-main .block .byline {
+    width: 100%;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .block .byline figure {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    margin: 2rem auto;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .block .byline p {
+    display: inline-block;
+    width: 100%;
+    padding: 3rem;
+  }
 }
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
 /* PHONE & IPAD SIZE SCREENS (681 - 968px width) */
 @media screen and (min-width: 681px) and (max-width: 968px) {
-  .outer-wrap-main .inner-wrap-main .row .region-main {
+  /* --- HEADER --- */
+  .region-header {
+    /* SITE-LOGO & TEXT */
+    /* NAVBAR */
+    /* HAMBURGER MENU */
+  }
+  .region-header .region-header-col-1 {
+    width: 40%;
+  }
+  .region-header .region-header-col-1 .site-logo-text {
+    display: inline-block;
+  }
+  .region-header .region-header-col-1 .site-logo-text a {
+    display: inline-block;
+  }
+  .region-header .region-header-col-2 {
+    width: 40%;
+  }
+  .region-header .region-header-col-2 .rm-desktop {
+    display: none;
+  }
+  .region-header .region-header-col-3 {
+    width: 20%;
+  }
+  .region-header .region-header-col-3 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 .rm-button {
+    margin: 2.5rem;
+  }
+  .rm-small {
+    display: none;
+  }
+  .site-logo {
+    display: none;
+  }
+  /* --- BREADCRUMBs --- */
+  .region-breadcrumb .breadcrumb-list ul li {
+    width: 28%;
+    padding: 0.5rem;
+  }
+  /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
+  .route- .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-om .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-style .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-testa .outer-wrap-main .inner-wrap-main .row .region-main {
+    display: block;
     width: 75%;
   }
-  .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+  /* --- ROUTE FOR REDOVISNING --- */
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main {
+    display: inline-block;
+    width: 66.666%;
+  }
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main .article {
+    padding: 0;
+    margin: 2rem auto;
+  }
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main .next-previous {
+    margin: 2rem 0;
+  }
+  /* --- MAIN --- */
+  .outer-wrap-main .inner-wrap-main .row .region-main {
+    margin: 0 auto;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .article {
+    padding: 0;
+    margin: 2rem 0;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-main .next-previous {
+    margin: 2rem 0;
+  }
+  .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
+    display: block;
+    float: left;
+    width: 28%;
+    padding-top: 2rem;
+    padding-left: 5%;
+  }
+  /* --- PICTURE @ HOME --- */
+  .route- .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
     float: right;
-    width: 30rem;
+    width: 35rem;
     margin: 0 0 1rem 1rem;
   }
-  .region-header {
-    /* SITE-LOGO & TEXT */
-    /* NAVBAR */
-    /* HAMBURGER MENU */
+  /* --- PICTURE @ ABOUT --- */
+  .route-om .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+    clear: both;
+    width: 30rem;
+    margin: 2rem 0;
   }
-  .region-header .region-header-col-1 {
-    width: 40%;
+  /* --- BYLINE --- */
+  .block .byline {
+    width: 90%;
+    display: flex;
+    columns: 2;
   }
-  .region-header .region-header-col-1 .site-logo-text {
-    display: inline-block;
-  }
-  .region-header .region-header-col-1 .site-logo-text a {
-    display: inline-block;
-  }
-  .region-header .region-header-col-2 {
-    width: 40%;
-  }
-  .region-header .region-header-col-2 .rm-desktop {
-    display: none;
-  }
-  .region-header .region-header-col-3 {
+  .block .byline figure {
     width: 20%;
+    height: 100%;
+    margin: 5%;
   }
-  .region-header .region-header-col-3 .rm-desktop {
+  .block .byline p {
     display: block;
-  }
-  .region-header .region-header-col-3 .rm-button {
-    margin: 2.5rem;
-  }
-  .rm-small {
-    display: none;
-  }
-  .site-logo {
-    display: none;
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    padding: 5%;
   }
 }
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
 /* IPAD & DESKTOP SIZE SCREENS (969 - 1199px width) */
-@media screen and (min-width: 969px) and (max-width: 1199px) {
-  .outer-wrap-main .inner-wrap-main .row .region-main {
+@media screen and (min-width: 969px) {
+  /* --- HEADER --- */
+  .region-header {
+    /* SITE-LOGO & TEXT */
+    /* NAVBAR */
+    /* HAMBURGER MENU */
+  }
+  .region-header .region-header-col-1 {
+    width: 20%;
+  }
+  .region-header .region-header-col-1 .site-logo-text {
+    display: inline-block;
+  }
+  .region-header .region-header-col-1 .site-logo-text a {
+    display: inline-block;
+  }
+  .region-header .region-header-col-2 {
     width: 60%;
   }
-  .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+  .region-header .region-header-col-2 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 {
+    width: 20%;
+  }
+  .region-header .region-header-col-3 .rm-desktop {
+    display: block;
+  }
+  .region-header .region-header-col-3 .rm-button {
+    margin: 2.5rem;
+  }
+  .rm-small {
+    display: none;
+  }
+  .site-logo {
+    display: none;
+  }
+  /* --- BREADCRUMBs --- */
+  .region-breadcrumb .breadcrumb-list ul li {
+    width: 25%;
+    padding: 0.5rem;
+  }
+  /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
+  .route- .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-om .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-style .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-testa .outer-wrap-main .inner-wrap-main .row .region-main {
+    display: block;
+    width: 60%;
+  }
+  /* --- ROUTE FOR REDOVISNING --- */
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main {
+    display: inline-block;
+    width: 50%;
+  }
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main .article,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main .article {
+    padding: 0;
+    margin: 2rem auto;
+  }
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main .next-previous,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main .next-previous {
+    margin: 2rem 0;
+  }
+  /* --- SIDEBAR LEFT --- */
+  .region-sidebar-left {
+    display: block;
+    float: left;
+    width: 25%;
+    padding-top: 2rem;
+    padding-left: 5%;
+  }
+  /* --- PICTURE @ HOME --- */
+  .route- .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
     float: right;
-    width: 30rem;
+    width: 35rem;
     margin: 0 0 1rem 1rem;
   }
-  .region-header {
-    /* SITE-LOGO & TEXT */
-    /* NAVBAR */
-    /* HAMBURGER MENU */
+  /* --- PICTURE @ ABOUT --- */
+  .route-om .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
+    clear: both;
+    width: 30rem;
+    margin: 2rem 0;
   }
-  .region-header .region-header-col-1 {
+  /* --- BYLINE --- */
+  .block .byline {
+    width: 90%;
+    display: flex;
+    columns: 2;
+  }
+  .block .byline figure {
     width: 20%;
+    height: 100%;
+    margin: 5%;
   }
-  .region-header .region-header-col-1 .site-logo-text {
-    display: inline-block;
-  }
-  .region-header .region-header-col-1 .site-logo-text a {
-    display: inline-block;
-  }
-  .region-header .region-header-col-2 {
-    width: 60%;
-  }
-  .region-header .region-header-col-2 .rm-desktop {
+  .block .byline p {
     display: block;
-  }
-  .region-header .region-header-col-3 {
-    width: 20%;
-  }
-  .region-header .region-header-col-3 .rm-desktop {
-    display: block;
-  }
-  .region-header .region-header-col-3 .rm-button {
-    margin: 2.5rem;
-  }
-  .rm-small {
-    display: none;
-  }
-  .site-logo {
-    display: none;
-  }
-}
-/* DESKTOP SIZE SCREENS (1200px+ width) */
-@media screen and (min-width: 1200px) {
-  .outer-wrap-main .inner-wrap-main .row .region-main {
-    width: 60%;
-  }
-  .region-header {
-    /* SITE-LOGO & TEXT */
-    /* NAVBAR */
-    /* HAMBURGER MENU */
-  }
-  .region-header .region-header-col-1 {
-    width: 20%;
-  }
-  .region-header .region-header-col-1 .site-logo-text {
-    display: inline-block;
-  }
-  .region-header .region-header-col-1 .site-logo-text a {
-    display: inline-block;
-  }
-  .region-header .region-header-col-2 {
-    width: 60%;
-  }
-  .region-header .region-header-col-2 .rm-desktop {
-    display: block;
-  }
-  .region-header .region-header-col-3 {
-    width: 20%;
-  }
-  .region-header .region-header-col-3 .rm-desktop {
-    display: block;
-  }
-  .region-header .region-header-col-3 .rm-button {
-    margin: 2.5rem;
-  }
-  .rm-small {
-    display: none;
-  }
-  .site-logo {
-    display: none;
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    padding: 5%;
   }
 }

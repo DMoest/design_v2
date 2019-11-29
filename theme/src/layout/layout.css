@@ -39,11 +39,7 @@
   display: inline-block;
 }
 .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
-  display: inline-block;
   float: left;
-  width: 23.3%;
-  padding-top: 3rem;
-  padding-left: 10%;
 }
 .outer-wrap-main .inner-wrap-main .row .region-sidebar-left h4 {
   display: inline-block;
