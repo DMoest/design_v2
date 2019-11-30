@@ -1,3 +1,5 @@
-#### Footer col 2
+<!-- My GitHub Repo -->
+<a href="https://github.com/DMoest/design_v2/commits/master" class="footer_link_github" target="_blank"><i class="fab fa-github-square"></i></a>
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+<!-- Instagram -->
+<a href="http://picpanzee.com/dan_just_dan_yeah" class="footer_link_insta" target="_blank"><i class="fab fa-instagram"></i></a>

@@ -89,6 +89,19 @@
     width: 100%;
     padding: 3rem;
   }
+  /* --- FOOTER --- */
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer {
+    /* SITE-LOGO & TEXT */
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-1 {
+    width: 40%;
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-2 {
+    width: 20%;
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-3 {
+    width: 40%;
+  }
 }
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */

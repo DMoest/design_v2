@@ -46,10 +46,41 @@
         margin: 0 auto;
 
         .footer-column {
-            display: inline-block;
-            width: 30%;
+            display: block;
             margin: 0 auto;
-            margin: 1.5%;
+
+            .footer-column-1,
+            .footer-column-3 {
+                display: hidden;
+            }
+
+            .footer-column-2 {
+                width: 18rem;
+                margin: 1rem auto;
+
+                p {
+                    display: inline-block;
+                    margin: 0 auto;
+
+                    .footer_link_insta {
+                        display: inline-block;
+                        font-size: 5rem;
+                        margin: 1rem 2rem;
+                        color: @text_color_light;
+                    }
+                    
+                    .footer_link_github {
+                        display: inline-block;
+                        font-size: 5rem;
+                        margin: 1rem 2rem;
+                        color: @text_color_light;
+                    
+                        i {
+                            width: 5rem;
+                        }
+                    }
+                }
+            }
         }
     }
 

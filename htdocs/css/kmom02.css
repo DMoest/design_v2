@@ -674,10 +674,35 @@ body {
   margin: 0 auto;
 }
 .region-footer .footer-column-wrapper .footer-column {
-  display: inline-block;
-  width: 30%;
+  display: block;
   margin: 0 auto;
-  margin: 1.5%;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-1,
+.region-footer .footer-column-wrapper .footer-column .footer-column-3 {
+  display: hidden;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-2 {
+  width: 18rem;
+  margin: 1rem auto;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-2 p {
+  display: inline-block;
+  margin: 0 auto;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-2 p .footer_link_insta {
+  display: inline-block;
+  font-size: 5rem;
+  margin: 1rem 2rem;
+  color: #fff;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-2 p .footer_link_github {
+  display: inline-block;
+  font-size: 5rem;
+  margin: 1rem 2rem;
+  color: #fff;
+}
+.region-footer .footer-column-wrapper .footer-column .footer-column-2 p .footer_link_github i {
+  width: 5rem;
 }
 .region-footer .site-footer p {
   clear: both;
@@ -844,6 +869,19 @@ body {
     display: inline-block;
     width: 100%;
     padding: 3rem;
+  }
+  /* --- FOOTER --- */
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer {
+    /* SITE-LOGO & TEXT */
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-1 {
+    width: 40%;
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-2 {
+    width: 20%;
+  }
+  .outer-wrap-footer .inner-wrap-footer .row .region-footer .region-footer-col-3 {
+    width: 40%;
   }
 }
 /* -------------------------------------------------- */
