@@ -1,0 +1,98 @@
+/*!
+ * Stylesheet for design kmom02.
+ *
+ * This stylesheet is for the design course and kmom02. */
+
+
+
+/* Internal self contained modules, save in directory module/. */
+/* MixIn Clearfix */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+
+/* IMPORT Normalize CSS */
+@import "normalize.css/normalize.less";
+
+
+
+// @import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+/* Base style to affect HTML elements on a general scale. */
+@import "base/base.less";
+
+
+
+/* Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles. */
+// @import "layout/layout.less";
+@import "layout/layout_kmom02.less";
+@import "layout/regions.less";     // To add style for ?regions
+// @import "layout/typography.less";
+@import "layout/header.less";
+// @import "layout/main.less";
+@import "layout/footer.less";
+@import "layout/flash.less";
+@import "layout/byline.less";
+// @import "layout/figures.less";
+// @import "layout/block.less";
+// @import "layout/toc.less";
+@import "layout/breadcrumb.less";
+@import "layout/responsive.less";
+
+
+
+/* IMPORT Font Awesome */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/* IMPORT Responsive */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/* --- VARIABLES (Last Defined) --- */
+/* Basic COLORS */
+@color_bg_light: #fff;
+@color_bg_dark: #555;
+@color_border: #999;
+@color_shadow: #777;
+
+/* Basic OTHERS */
+@std_borderRadius: 0.5rem;
+
+/* Item COLORS */
+@color_primary: rgb(36, 148, 86);
+@color_secondary: rgb(36, 148, 86);
+@color_tertiary: rgb(36, 148, 86);
+
+/* Variables TEXT */
+@text_color_light: #fff;
+@text_color_dark: #333;
+@text_color_grey: #555;
+@font_family_body: 'Dosis', sans-serif;
+/* Headers */
+@font_size_h1: 2.8rem;
+@font_size_h2: 2.4rem;
+@font_size_h3: 2rem;
+@font_size_h4: 2rem;
+@font_size_h5: 2rem;
+@font_size_h6: 2rem;
+@font_weight_h: 500;
+/* Paragraphs */
+@font_size_p: 1.8rem;
+@font_weight_p: 300;
+
+
+
+/* --- MIXINS --- */
