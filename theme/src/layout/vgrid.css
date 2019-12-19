@@ -1,0 +1,99 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/* --- VARIABLES (Layout-Default/Fallback) --- */
+/* Basic COLORS */
+/* Basic OTHERS */
+/* Item COLORS */
+/* Variables TEXT */
+/* Headers */
+/* Paragraphs */
+/* --- MAIN --- */
+.outer-wrap-main .inner-wrap .row {
+  position: relative;
+  /* --- NEXT/PREVIOUS links --- */
+}
+.outer-wrap-main .inner-wrap .row .region-breadcrumb {
+  display: block;
+}
+.outer-wrap-main .inner-wrap .row .region-main {
+  text-align: left;
+  /* --- ARTICLE --- */
+}
+.outer-wrap-main .inner-wrap .row .region-main .article {
+  display: inline-block;
+}
+.outer-wrap-main .inner-wrap .row .region-main .stylechooser fieldset {
+  border-radius: 0.5rem;
+}
+.outer-wrap-main .inner-wrap .row .has-sidebar-left {
+  display: inline-block;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-left h4 {
+  display: inline-block;
+  font-size: 2rem;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-left ul li {
+  list-style: none;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-left ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-left ul li a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+.outer-wrap-main .inner-wrap .row .has-sidebar-right {
+  display: inline-block;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-right {
+  display: inline-block;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-right h4 {
+  display: inline-block;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-right li {
+  list-style: none;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-right a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-right a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+.outer-wrap-main .inner-wrap .row .next-previous {
+  clear: both;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .next a {
+  text-decoration: none;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .next a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .previous a {
+  text-decoration: none;
+  color: #333;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .previous a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+.route- .figure img {
+  border-radius: 0.5rem;
+}
+.route-om .figure img {
+  border-radius: 0.5rem;
+}
+.figure p {
+  clear: both;
+}

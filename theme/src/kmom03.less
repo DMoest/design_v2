@@ -27,24 +27,37 @@
 /* Base style to affect HTML elements on a general scale. */
 @import "base/base.less";
 
+/**
+ * Import the vertical grid.
+ */
+ 
+ @import "@desinax/vertical-grid/less/grid.less";
+ @import "layout/vgrid.less";
+ // Default grid, change to fit your requirements.
+//  @columnWidth:   30;
+//  @gutterWidth:   10;
+//  @columns:       24;
+//  @gridType:      "float"; // "flex"
+
+
 
 
 /* Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles. */
 // @import "layout/layout.less";
-@import "layout/layout_kmom02.less";
-@import "layout/regions.less";     // To add style for ?regions
+// @import "layout/layout_kmom02.less";
+// @import "layout/regions.less";     // To add style for ?regions
 // @import "layout/typography.less";
-@import "layout/header.less";
+// @import "layout/header.less";
 // @import "layout/main.less";
-@import "layout/footer.less";
-@import "layout/flash.less";
-@import "layout/byline.less";
+// @import "layout/footer.less";
+// @import "layout/flash.less";
+// @import "layout/byline.less";
 // @import "layout/figures.less";
 // @import "layout/block.less";
 // @import "layout/toc.less";
-@import "layout/breadcrumb.less";
-@import "layout/responsive.less";
+// @import "layout/breadcrumb.less";
+// @import "layout/responsive.less";
 
 
 
@@ -94,5 +107,3 @@
 @font_weight_p: 300;
 
 
-
-/* --- MIXINS --- */
