@@ -450,18 +450,48 @@ body {
   display: block;
   clear: both;
 }
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+}
+.vgrid .inner-wrap {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap {
+    background-size: 100% auto;
+  }
+}
+.vgrid .inner-wrap.inner-wrap-header,
+.vgrid .inner-wrap.inner-wrap-footer {
+  background: url("../img/grid_24x30x10-nomargin.png") repeat-y scroll center center;
+  background-size: 100% auto;
+}
+@media (min-width: 100%) {
+  .vgrid .inner-wrap.inner-wrap-header,
+  .vgrid .inner-wrap.inner-wrap-footer {
+    background-size: 100% auto;
+  }
+}
 /* --- HEADER --- */
 .outer-wrap-header {
   background-color: #555;
-  overflow: auto;
   content: "";
   display: block;
-  clear: both;
 }
 .outer-wrap-header .inner-wrap-header {
-  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
 }
 .outer-wrap-header .inner-wrap-header .region-header {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   /* --- NAVBAR --- */
 }
 .outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 {
@@ -471,14 +501,23 @@ body {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  height: 100%;
 }
 .outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo {
   display: block;
+  display: inline;
+  float: left;
+  width: 40.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
   color: #fff;
 }
 .outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo-text {
   display: inline-block;
+  display: inline;
+  float: left;
+  width: 40.625%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
 }
 .outer-wrap-header .inner-wrap-header .region-header .region-header-col-1 .site-logo-text a {
   cursor: pointer;
@@ -499,7 +538,6 @@ body {
   width: 57.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  height: 100%;
   text-align: center;
 }
 .outer-wrap-header .inner-wrap-header .region-header .region-header-col-2 .rm-navbar {
@@ -546,7 +584,7 @@ body {
 .outer-wrap-main .inner-wrap .row .region-main {
   display: inline;
   float: left;
-  width: 57.29166667%;
+  width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   text-align: left;
@@ -560,6 +598,13 @@ body {
 }
 .outer-wrap-main .inner-wrap .row .has-sidebar-left {
   display: inline-block;
+}
+.outer-wrap-main .inner-wrap .row .region-sidebar-left {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
 }
 .outer-wrap-main .inner-wrap .row .region-sidebar-left h4 {
   display: inline-block;
@@ -583,6 +628,11 @@ body {
 }
 .outer-wrap-main .inner-wrap .row .region-sidebar-right {
   display: inline-block;
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
 }
 .outer-wrap-main .inner-wrap .row .region-sidebar-right h4 {
   display: inline-block;
@@ -601,7 +651,19 @@ body {
   color: #555;
 }
 .outer-wrap-main .inner-wrap .row .next-previous {
-  clear: both;
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .next {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  text-align: left;
 }
 .outer-wrap-main .inner-wrap .row .next-previous .next a {
   text-decoration: none;
@@ -610,6 +672,14 @@ body {
 .outer-wrap-main .inner-wrap .row .next-previous .next a:hover {
   text-decoration: underline;
   color: #555;
+}
+.outer-wrap-main .inner-wrap .row .next-previous .previous {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  text-align: right;
 }
 .outer-wrap-main .inner-wrap .row .next-previous .previous a {
   text-decoration: none;
@@ -629,8 +699,12 @@ body {
   clear: both;
 }
 /* --- FOOTER --- */
+.inner-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
 .region-footer {
-  clear: both;
   color: #fff;
   background-color: #555;
 }
@@ -640,13 +714,6 @@ body {
 .region-footer .footer-column-wrapper .footer-column .footer-column-1,
 .region-footer .footer-column-wrapper .footer-column .footer-column-3 {
   display: hidden;
-}
-.region-footer .footer-column-wrapper .footer-column .footer-column-2 {
-  display: inline;
-  float: left;
-  width: 98.95833333%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
 }
 .region-footer .footer-column-wrapper .footer-column .footer-column-2 p {
   display: inline-block;
@@ -714,7 +781,6 @@ regions .outer-wrap {
 }
 /* --- BYLINE --- */
 .byline {
-  overflow: auto;
   border: 0.05rem solid #999;
   border-radius: 0.5rem;
 }
@@ -769,11 +835,28 @@ regions .outer-wrap {
   .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
     clear: both;
   }
+  .outer-wrap-main .inner-wrap-main .row .region-main .block .byline {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .outer-wrap-main .inner-wrap-main .row .region-main .block .byline figure {
     display: block;
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   .outer-wrap-main .inner-wrap-main .row .region-main .block .byline p {
     display: inline-block;
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- FOOTER --- */
 }
@@ -787,14 +870,35 @@ regions .outer-wrap {
     /* NAVBAR */
     /* HAMBURGER MENU */
   }
+  .region-header .region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 40.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .region-header .region-header-col-1 .site-logo-text {
     display: inline-block;
   }
   .region-header .region-header-col-1 .site-logo-text a {
     display: inline-block;
   }
+  .region-header .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 40.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .region-header .region-header-col-2 .rm-desktop {
     display: none;
+  }
+  .region-header .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 19.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   .region-header .region-header-col-3 .rm-desktop {
     display: block;
@@ -806,12 +910,24 @@ regions .outer-wrap {
     display: none;
   }
   /* --- BREADCRUMBs --- */
+  .region-breadcrumb .breadcrumb-list ul li {
+    display: inline;
+    float: left;
+    width: 28.125%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
   .route- .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-om .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-style .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-testa .outer-wrap-main .inner-wrap-main .row .region-main {
     display: block;
+    display: inline;
+    float: left;
+    width: 73.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- ROUTE FOR REDOVISNING --- */
   .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main,
@@ -844,10 +960,20 @@ regions .outer-wrap {
   .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main {
     display: inline-block;
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- MAIN --- */
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
     display: block;
+    display: inline;
+    float: left;
+    width: 23.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- PICTURE @ HOME --- */
   .route- .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
@@ -859,15 +985,28 @@ regions .outer-wrap {
   }
   /* --- BYLINE --- */
   .block .byline {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
     display: flex;
     columns: 2;
   }
   .block .byline figure {
-    height: 100%;
+    display: inline;
+    float: left;
+    width: 19.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   .block .byline p {
     display: block;
-    height: 60%;
+    display: inline;
+    float: left;
+    width: 69.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
 }
 /* -------------------------------------------------- */
@@ -880,14 +1019,35 @@ regions .outer-wrap {
     /* NAVBAR */
     /* HAMBURGER MENU */
   }
+  .region-header .region-header-col-1 {
+    display: inline;
+    float: left;
+    width: 19.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .region-header .region-header-col-1 .site-logo-text {
     display: inline-block;
   }
   .region-header .region-header-col-1 .site-logo-text a {
     display: inline-block;
   }
+  .region-header .region-header-col-2 {
+    display: inline;
+    float: left;
+    width: 57.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .region-header .region-header-col-2 .rm-desktop {
     display: block;
+  }
+  .region-header .region-header-col-3 {
+    display: inline;
+    float: left;
+    width: 19.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   .region-header .region-header-col-3 .rm-desktop {
     display: block;
@@ -899,12 +1059,24 @@ regions .outer-wrap {
     display: none;
   }
   /* --- BREADCRUMBs --- */
+  .region-breadcrumb .breadcrumb-list ul li {
+    display: inline;
+    float: left;
+    width: 23.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
   .route- .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-om .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-style .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-testa .outer-wrap-main .inner-wrap-main .row .region-main {
     display: block;
+    display: inline;
+    float: left;
+    width: 57.29166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- ROUTE FOR REDOVISNING --- */
   .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main,
@@ -937,10 +1109,20 @@ regions .outer-wrap {
   .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row .region-main {
     display: inline-block;
+    display: inline;
+    float: left;
+    width: 48.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- SIDEBAR LEFT --- */
   .region-sidebar-left {
     display: block;
+    display: inline;
+    float: left;
+    width: 23.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   /* --- PICTURE @ HOME --- */
   /* --- PICTURE @ ABOUT --- */
@@ -949,15 +1131,28 @@ regions .outer-wrap {
   }
   /* --- BYLINE --- */
   .block .byline {
+    display: inline;
+    float: left;
+    width: 90.625%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
     display: flex;
     columns: 2;
   }
   .block .byline figure {
-    height: 100%;
+    display: inline;
+    float: left;
+    width: 19.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
   .block .byline p {
     display: block;
-    height: 60%;
+    display: inline;
+    float: left;
+    width: 69.79166667%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
   }
 }
 /* Layout style for general structure of header, navbar, main, footer
