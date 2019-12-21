@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom02.
+ * Stylesheet for design kmom03.
  *
  * This stylesheet is for the design course and kmom02. */
 
@@ -24,13 +24,38 @@
 
 
 
+/* Import TYPOGRAPHIC GRID. */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+
+
+/* Activate HGRID */
+#desinax-hgrid.activateDefaultTypography();
+
+
+
+/* Show the GRID */
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+
+// Choose fontFamily by overwriting existing variables in "typography-defaults".
+@fontFamilyBody: sans-serif;
+@fontFamilyCode: "dosis";
+
+
 /* Base style to affect HTML elements on a general scale. */
-@import "base/base.less";
+// @import "base/base.less";
+@import "base/base_kmom03.less";
+
+
 
 /**
- * Import the vertical grid.
- */
- 
+ * Import the VERTICAL GRID. */
  @import "@desinax/vertical-grid/less/grid.less";
  @import "layout/vgrid.less";
  // Default grid, change to fit your requirements.

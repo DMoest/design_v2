@@ -50,7 +50,7 @@
 
 
 
-// --- SET UP GRID SIZE ---
+// --- SETUP GRID SIZE ---
 .inner-wrap {
     #desinax-vgrid.grid(80%);
 }
@@ -201,10 +201,10 @@
 
             .region-main {
                 #desinax-vgrid.column(12);
+                text-align: left;
                 // display: block;
                 // width: 60%;
                 // margin: 0 auto;
-                text-align: left;
 
                 /* --- ARTICLE --- */
                 .article {
@@ -301,14 +301,14 @@
 
             /* --- NEXT/PREVIOUS links --- */
             .next-previous {
-                #desinax-vgrid.column(24);
+                #desinax-vgrid.column(@columns);
                 // clear: both;
                 // margin: 3rem;
 
                 .next {
                     #desinax-vgrid.column(12);
-                    text-align: left;
-                    // float: right;
+                    text-align: right;
+                    float: right;
     
                     a {
                         // margin: 1rem 0;
@@ -324,7 +324,8 @@
     
                 .previous {
                     #desinax-vgrid.column(12);
-                    text-align: right;
+                    float: left;
+                    text-align: left;
 
                     a {
                         text-decoration: none;
@@ -348,8 +349,9 @@
     .figure {
 
         img {
+            #desinax-vgrid.column(12);
             // width: 30rem;
-            // float: right;
+            float: right;
             border-radius: @std_borderRadius;
             // margin: 0 0 1rem 1rem;
         }
@@ -362,7 +364,8 @@
     .figure {
 
         img {
-            // float: left;
+            #desinax-vgrid.column(12);
+            float: left;
             // width: 30rem;
             // margin: 1rem 1rem 1rem 0;
             border-radius: @std_borderRadius;
@@ -381,16 +384,20 @@
 
 
 /* --- FOOTER --- */
-.inner-wrap-footer {
-    #desinax-vgrid.grid(100%);
+.outer-wrap-footer {
+    #desinax-vgrid.grid(@columns);
+    
+    .inner-wrap-footer {
+        #desinax-vgrid.grid(80%);
+    }
 }
 
 .region-footer {
+    color: #fff;
+    background-color: @color_bg_dark;
     // clear: both;
     // width: 100%;
     // margin: 0 auto;
-    color: #fff;
-    background-color: @color_bg_dark;
     // padding: 1rem;
     
     .footer-column-wrapper {
@@ -417,15 +424,15 @@
                     .footer_link_insta {
                         display: inline-block;
                         font-size: 5rem;
-                        // margin: 1rem 2rem;
                         color: @text_color_light;
+                        // margin: 1rem 2rem;
                     }
                     
                     .footer_link_github {
                         display: inline-block;
                         font-size: 5rem;
-                        // margin: 1rem 2rem;
                         color: @text_color_light;
+                        // margin: 1rem 2rem;
                     
                         i {
                             // width: 5rem;
@@ -440,9 +447,9 @@
 
         p {
             clear: both;
-            #desinax-vgrid.column(24);
-            // width: 100%;
+            #desinax-vgrid.column(@columns);
             text-align: center;
+            // width: 100%;
             // padding: 3rem;
         }
     }
@@ -453,21 +460,23 @@
 /* --- FLASH --- */
 .inner-wrap {
     // max-width: 1100px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     img {
-        // width: 100%;
+        #desinax-vgrid.column(@columns);
     }
 }
 
 /* --- COVER PICTURE --- */
-.inner-wrap-flash {
+.outer-wrap-flash {
+    #desinax-vgrid.column(@columns);
+    
+    .inner-wrap-flash {
 
-    img {
-        // width: 100%;
+        img {
+        }
     }
 }
-
 
 
 /* --- BREADCRUMB-LIST --- */
@@ -613,6 +622,8 @@ regions .outer-wrap {
 
     /* --- BREADCRUMBs --- */
     .region-breadcrumb {
+        #desinax-vgrid.column(@columns);
+
         .breadcrumb-list {
             ul {
                 li {
@@ -638,8 +649,8 @@ regions .outer-wrap {
                     // padding: 0;
 
                     h4 {
-                        // width: 100%;
                         text-align: center;
+                        // width: 100%;
                         // margin: 1rem;
                     }
 
@@ -677,12 +688,12 @@ regions .outer-wrap {
                     /* --- BYLINE --- */
                     .block {
                         .byline {
-                            #desinax-vgrid.column(24);
+                            #desinax-vgrid.column(@columns);
                             // width: 100%;
                     
                             figure {
                                 display: block;
-                                #desinax-vgrid.column(24);
+                                #desinax-vgrid.column(@columns);
                                 // width: 100%;
                                 // height: 10rem;
                                 // margin: 2rem auto;
@@ -690,7 +701,7 @@ regions .outer-wrap {
 
                             p {
                                 display: inline-block;
-                                #desinax-vgrid.column(24);
+                                #desinax-vgrid.column(@columns);
                                 // width: 100%;
                                 // padding: 3rem;
                             }
@@ -707,6 +718,8 @@ regions .outer-wrap {
     .outer-wrap-footer {
         .inner-wrap-footer {
             .row {
+                #desinax-vgrid.column(@columns);
+
                 .region-footer {
 
                     // /* SITE-LOGO & TEXT */
@@ -795,10 +808,11 @@ regions .outer-wrap {
 
     /* --- BREADCRUMBs --- */
     .region-breadcrumb {
+        #desinax-vgrid.column(@columns);
+
         .breadcrumb-list {
             ul {
                 li {
-                    #desinax-vgrid.column(7);
                     // width: 28%;
                     // padding: 0.5rem;
                 }
@@ -816,6 +830,8 @@ regions .outer-wrap {
         .outer-wrap-main {
             .inner-wrap-main {
                 .row {
+                    #desinax-vgrid.column(@columns);
+
                     .region-main {
                         display: block;
                         #desinax-vgrid.column(18);
@@ -861,6 +877,8 @@ regions .outer-wrap {
         .outer-wrap-main {
             .inner-wrap-main {
                 .row {
+                    #desinax-vgrid.column(@columns);
+
                     .region-main {
                         display: inline-block;
                         #desinax-vgrid.column(16);
@@ -901,8 +919,8 @@ regions .outer-wrap {
 
                 .region-sidebar-left {
                     display: block;
-                    // float: left;
                     #desinax-vgrid.column(6);
+                    // float: left;
                     // width: 28%;
                     // padding-top: 2rem;
                     // padding-left: 5%;
@@ -925,7 +943,7 @@ regions .outer-wrap {
                         .figure {
 
                             img {
-                                float: right;
+                                // float: right;
                                 // width: 35rem;
                                 // margin: 0 0 1rem 1rem;
                             }
@@ -947,7 +965,7 @@ regions .outer-wrap {
                         .figure {
 
                             img {
-                                clear: both;
+                                // clear: both;
                                 // width: 30rem;
                                 // margin: 2rem 0;
                             }
@@ -963,10 +981,10 @@ regions .outer-wrap {
     /* --- BYLINE --- */
     .block {
         .byline {
-            #desinax-vgrid.column(22);
-            // width: 90%;
             display: flex;
             columns: 2;
+            #desinax-vgrid.column(22);
+            // width: 90%;
     
             figure {
                 #desinax-vgrid.column(5);
@@ -1048,7 +1066,9 @@ regions .outer-wrap {
 
     /* --- BREADCRUMBs --- */
     .region-breadcrumb {
-        .breadcrumb-list {
+        #desinax-vgrid.column(@columns);
+        
+        .breadcrumb-list {    
             ul {
                 li {
                     #desinax-vgrid.column(6);

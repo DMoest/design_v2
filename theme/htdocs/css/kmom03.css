@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom02.
+ * Stylesheet for design kmom03.
  *
  * This stylesheet is for the design course and kmom02. */
 /* Internal self contained modules, save in directory module/. */
@@ -323,6 +323,329 @@ template {
 /**
  * Style
  */
+/* Import TYPOGRAPHIC GRID. */
+/**
+ * Typographic font families to choose from.
+ */
+/**
+ * Typographic defaults.
+ */
+#desinax-hgrid {
+  /**
+     * Mixins used when setting default fonts
+     */
+  /**
+     * Settings for headings H1-H6
+     */
+  /**
+     * Text elements
+     */
+  /**
+     * Display source code.
+     */
+  /**
+     * Lists
+     */
+  /**
+     * Tables. Because of the need for padding on TH and TD, the vertical rhythm
+     * on table cells has to be 1.5*@magic-number.
+     */
+  /**
+     * More typography elements
+     */
+  /**
+     * Enable all default typographic elements.
+     */
+}
+/* Activate HGRID */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "serif";
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  margin: 0;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 48px;
+}
+h1 + h2 {
+  margin-top: 24px;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #CCC;
+}
+h2 + h3 {
+  margin-top: 24px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.71428571;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h3 + h4 {
+  margin-top: 24px;
+}
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h4 + h5 {
+  margin-top: 24px;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+h5 + h6 {
+  margin-top: 24px;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #EEE;
+}
+p {
+  margin-bottom: 24px;
+}
+small,
+.small,
+.smaller {
+  font-size: 0.875em;
+}
+strong,
+b {
+  font-weight: bold;
+}
+mark {
+  color: #000;
+  background-color: #ff9;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: dotted underline;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+pre,
+code,
+kbd,
+samp,
+.code {
+  font-family: "dosis";
+}
+code,
+samp {
+  border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+code {
+  background-color: #eee;
+}
+pre,
+div.code,
+pre code {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre;
+}
+pre {
+  margin-bottom: 24px;
+}
+pre code {
+  display: block;
+  overflow: auto;
+}
+div.code,
+pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+ul,
+ol {
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+ul p,
+ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl {
+  margin-bottom: 24px;
+}
+dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+dd {
+  margin-left: 1.5em;
+}
+article table,
+.table,
+.table1,
+.table2 {
+  margin-bottom: 24px;
+}
+table.full-width,
+article .table,
+.table,
+.table2 {
+  width: 100%;
+}
+article table,
+.table,
+.table2 {
+  border-collapse: collapse;
+  /*
+            tfoot {
+            }
+            */
+}
+article table caption,
+.table caption,
+.table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+article table thead,
+.table thead,
+.table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+article table th,
+.table th,
+.table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+article table th,
+.table th,
+.table2 th,
+article table td,
+.table td,
+.table2 td {
+  padding: 6px;
+}
+article table tr,
+.table tr,
+.table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+article table tr:hover,
+.table tr:hover,
+.table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+table.striped tbody tr:nth-child(even) td,
+table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+hr::after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
+/* Show the GRID */
+.hgrid .inner-wrap {
+  background-image: url("../img/magic-number-24px.png");
+}
 /* Base style to affect HTML elements on a general scale. */
 /**
  * Base style to affect HTML elements on a general scale.
@@ -342,7 +665,6 @@ template {
 }
 html {
   /* TEXT */
-  font-family: 'Dosis', sans-serif;
   font-size: 62.5%;
   /* Declaration of ROOT EMs */
   font-weight: 300;
@@ -384,11 +706,11 @@ html img {
   max-width: 100%;
 }
 body {
+  font: 16px/1.5 sans-serif;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  font-size: 1.8rem;
   color: #333;
   background-color: #fff;
 }
@@ -396,8 +718,7 @@ body {
   clear: both;
 }
 /**
- * Import the vertical grid.
- */
+ * Import the VERTICAL GRID. */
 /**
  * Fluid and Responsive Vertical Grid
  */
@@ -663,7 +984,8 @@ body {
   width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  text-align: left;
+  text-align: right;
+  float: right;
 }
 .outer-wrap-main .inner-wrap .row .next-previous .next a {
   text-decoration: none;
@@ -675,11 +997,11 @@ body {
 }
 .outer-wrap-main .inner-wrap .row .next-previous .previous {
   display: inline;
-  float: left;
   width: 48.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  text-align: right;
+  float: left;
+  text-align: left;
 }
 .outer-wrap-main .inner-wrap .row .next-previous .previous a {
   text-decoration: none;
@@ -690,19 +1012,35 @@ body {
   color: #555;
 }
 .route- .figure img {
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: right;
   border-radius: 0.5rem;
 }
 .route-om .figure img {
+  display: inline;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  float: left;
   border-radius: 0.5rem;
 }
 .figure p {
   clear: both;
 }
 /* --- FOOTER --- */
-.inner-wrap-footer {
+.outer-wrap-footer {
   margin-right: auto;
   margin-left: auto;
-  max-width: 100%;
+  max-width: 24;
+}
+.outer-wrap-footer .inner-wrap-footer {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
 }
 .region-footer {
   color: #fff;
@@ -738,10 +1076,21 @@ body {
   text-align: center;
 }
 /* --- FLASH --- */
-.inner-wrap {
-  margin: 0 auto;
+.inner-wrap img {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
 }
 /* --- COVER PICTURE --- */
+.outer-wrap-flash {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 /* --- BREADCRUMB-LIST --- */
 .breadcrumb-list li {
   display: inline-block;
@@ -814,6 +1163,13 @@ regions .outer-wrap {
     display: block;
   }
   /* --- BREADCRUMBs --- */
+  .region-breadcrumb {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   /* --- MAIN --- */
   .outer-wrap-main .inner-wrap-main .row .region-sidebar-left {
     display: block;
@@ -859,6 +1215,13 @@ regions .outer-wrap {
     margin-right: 0.52083333%;
   }
   /* --- FOOTER --- */
+  .outer-wrap-footer .inner-wrap-footer .row {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
 }
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
@@ -910,14 +1273,24 @@ regions .outer-wrap {
     display: none;
   }
   /* --- BREADCRUMBs --- */
-  .region-breadcrumb .breadcrumb-list ul li {
+  .region-breadcrumb {
     display: inline;
     float: left;
-    width: 28.125%;
+    width: 98.95833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
   }
   /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
+  .route- .outer-wrap-main .inner-wrap-main .row,
+  .route-om .outer-wrap-main .inner-wrap-main .row,
+  .route-style .outer-wrap-main .inner-wrap-main .row,
+  .route-testa .outer-wrap-main .inner-wrap-main .row {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .route- .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-om .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-style .outer-wrap-main .inner-wrap-main .row .region-main,
@@ -930,6 +1303,41 @@ regions .outer-wrap {
     margin-right: 0.52083333%;
   }
   /* --- ROUTE FOR REDOVISNING --- */
+  .route-redovisning .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom03 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom04 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom05 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom06 .outer-wrap-main .inner-wrap-main .row,
+  .route-redovisning-kmom10 .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-kmom01 .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-markdown .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-shortcode .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-frontmatter .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-stylevaljare .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-vyer-och-templatefiler .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-layout-och-regioner .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-kmom02 .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-font-awesome .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-kmom03 .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-viewport .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-vertikalt-grid .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-horisontellt-typografiskt-grid .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-kmom05 .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-bildhantering-med-cimage .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-shortcode-figure .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-less-modul-for-figure .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-bilder-i-text .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-ovrigt .outer-wrap-main .inner-wrap-main .row,
+  .route-verktyg-styla-en-route .outer-wrap-main .inner-wrap-main .row {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .route-redovisning .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-redovisning-kmom01 .outer-wrap-main .inner-wrap-main .row .region-main,
   .route-redovisning-kmom02 .outer-wrap-main .inner-wrap-main .row .region-main,
@@ -976,22 +1384,16 @@ regions .outer-wrap {
     margin-right: 0.52083333%;
   }
   /* --- PICTURE @ HOME --- */
-  .route- .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
-    float: right;
-  }
   /* --- PICTURE @ ABOUT --- */
-  .route-om .outer-wrap-main .inner-wrap-main .row .region-main .figure img {
-    clear: both;
-  }
   /* --- BYLINE --- */
   .block .byline {
+    display: flex;
+    columns: 2;
     display: inline;
     float: left;
     width: 90.625%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
-    display: flex;
-    columns: 2;
   }
   .block .byline figure {
     display: inline;
@@ -1059,6 +1461,13 @@ regions .outer-wrap {
     display: none;
   }
   /* --- BREADCRUMBs --- */
+  .region-breadcrumb {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: 0.52083333%;
+    margin-right: 0.52083333%;
+  }
   .region-breadcrumb .breadcrumb-list ul li {
     display: inline;
     float: left;
