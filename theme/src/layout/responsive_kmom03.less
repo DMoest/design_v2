@@ -1,0 +1,691 @@
+/* -------------------------------------------------- */
+/* ---------- RESPONSIVENESS ---------- */
+/* -------------------------------------------------- */
+
+/* PHONE SIZE SCREENS (0 - 680px width) */
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    
+    /* --- HEADER --- */
+    .outer-wrap-header {
+        .inner-wrap-header {
+            .row {
+                .region-header {
+
+                    /* SITE-LOGO & TEXT */
+                    .region-header-col-1 {
+                        #desinax-vgrid.column(10);
+                        // width: 40%;
+
+                        .site-logo-text {
+                            display: none;
+
+                            a {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .region-header-col-2 {
+                        #desinax-vgrid.column(4);
+                        // width: 20%;
+
+                        .rm-navbar {
+                            display: none;
+    
+                            .rm-desktop {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .region-header-col-3 {
+                        #desinax-vgrid.column(10);
+                        // width: 40%;
+                        
+
+                        .rm-small {
+                            display: block;
+
+                            // .rm-button {
+                            //     margin: 2.5rem;
+                            // }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+    /* --- BREADCRUMBs --- */
+    .region-breadcrumb {
+        #desinax-vgrid.column(@columns);
+
+        .breadcrumb-list {
+            ul {
+                li {
+                    #desinax-vgrid.column(@columns / 2);
+                    // width: 49%;
+                    // padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+
+
+    /* --- MAIN --- */
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+
+                .region-sidebar-left {
+                    display: block;
+                    clear: both;
+                    #desinax-vgrid.column(@columns);
+                    // width: 100%;
+                    // margin: 1rem auto;
+                    // padding: 0;
+
+                    h4 {
+                        text-align: center;
+                        #desinax-vgrid.column(@columns);
+                        // width: 100%;
+                        // margin: 1rem;
+                    }
+
+                    ul {
+                        text-align: center;
+
+                        // li {
+                        //     margin: 0.5rem auto;
+                        // }
+                    }
+                }
+                
+                .region-main {
+                    display: block;
+                    #desinax-vgrid.column(@columns * 9 / 10);
+                    // width: 90%;
+                    // margin: 0 auto;
+
+                    article {
+                        padding: 1rem 0;
+                    }
+
+                    // .next-previous {
+                    //     margin: 2rem 0;
+                    // }
+
+                    .figure {
+
+                        img {
+                            clear: both;
+                            #desinax-vgrid.column(@columns);
+                            // width: 100%;
+                            // margin: 1rem auto;
+                        }
+                    }
+
+                    /* --- BYLINE --- */
+                    .block {
+                        .byline {
+                            #desinax-vgrid.column(@columns);
+                            // width: 100%;
+                    
+                            figure {
+                                display: block;
+                                #desinax-vgrid.column(@columns);
+                                // width: 100%;
+                                // height: 10rem;
+                                // margin: 2rem auto;
+                            }
+
+                            p {
+                                display: inline-block;
+                                #desinax-vgrid.column(@columns);
+                                // width: 100%;
+                                // padding: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- FOOTER --- */
+    .outer-wrap-footer {
+        .inner-wrap-footer {
+            .row {
+                #desinax-vgrid.column(@columns);
+
+                // .region-footer {
+
+                //     /* SITE-LOGO & TEXT */
+                //     .region-footer-col-1 {
+                //         width: 40%;
+
+
+                //     }
+
+                //     .region-footer-col-2 {
+                //         width: 20%;
+
+                //     }
+
+                //     .region-footer-col-3 {
+                //         width: 40%;
+                //     }
+
+                // }
+            }
+        }
+    }
+}
+
+
+
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* PHONE & IPAD SIZE SCREENS (681 - 968px width) */
+@media screen and (min-width: 681px) and (max-width: 968px) {
+
+    /* --- HEADER --- */
+    .outer-wrap-header {
+        .inner-wrap-header {
+            .row {
+                .region-header {
+
+                    /* SITE-LOGO & TEXT */
+                    .region-header-col-1 {
+                        #desinax-vgrid.column(@columns / 3);
+
+                        .site-logo-text {
+                            display: inline-block;
+                            #desinax-vgrid.column(@columns / 2);
+
+                            a {
+                                display: inline-block;
+                            }
+                        }
+
+                        .site-logo {
+                            display: inline-block;
+                            #desinax-vgrid.column(@columns / 2);
+                        }
+                    }
+
+                    /* NAVBAR */
+                    .region-header-col-2 {
+                        #desinax-vgrid.column(@columns / 3);
+
+                        .rm-navbar {
+                            display: none;
+
+                            .rm-desktop {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    /* HAMBURGER MENU */
+                    .region-header-col-3 {
+                        #desinax-vgrid.column(@columns / 3);
+                        
+                        .rm-desktop {
+                            display: block;
+                        }
+                        
+                        // .rm-button {
+                        //     margin: 2.5rem;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+    
+    .rm-small {
+        display: none;
+    }
+
+    .site-logo {
+        display: none;
+    }
+
+
+
+    /* --- BREADCRUMBs --- */
+    .region-breadcrumb {
+        #desinax-vgrid.column(@columns);
+
+        .breadcrumb-list {
+            ul {
+                li {
+                    #desinax-vgrid.column(6);
+                    // width: 28%;
+                    // padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+
+
+    /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
+    .route-,
+    .route-om,
+    .route-style,
+    .route-testa  {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    #desinax-vgrid.column(@columns);
+
+                    .region-main {
+                        display: block;
+                        #desinax-vgrid.column(18);
+                        // width: 75%;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- ROUTE FOR REDOVISNING --- */
+    .route-redovisning,
+    .route-redovisning-kmom01,
+    .route-redovisning-kmom02,
+    .route-redovisning-kmom03,
+    .route-redovisning-kmom04,
+    .route-redovisning-kmom05,
+    .route-redovisning-kmom06,
+    .route-redovisning-kmom10,
+    .route-verktyg,
+    .route-verktyg-kmom01, 
+    .route-verktyg-markdown,
+    .route-verktyg-shortcode,
+    .route-verktyg-frontmatter,
+    .route-verktyg-stylevaljare,
+    .route-verktyg-vyer-och-templatefiler,
+    .route-verktyg-layout-och-regioner,
+    .route-verktyg-kmom02,
+    .route-verktyg-font-awesome,
+    .route-verktyg-kmom03,
+    .route-verktyg-viewport,
+    .route-verktyg-vertikalt-grid,
+    .route-verktyg-horisontellt-typografiskt-grid,
+    .route-verktyg-kmom05,
+    .route-verktyg-bildhantering-med-cimage,
+    .route-verktyg-shortcode-figure,
+    .route-verktyg-less-modul-for-figure,
+    .route-verktyg-bilder-i-text,
+    .route-verktyg-ovrigt, 
+    .route-verktyg-styla-en-route {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    #desinax-vgrid.column(@columns);
+
+                    .region-main {
+                        display: inline-block;
+                        #desinax-vgrid.column(16);
+                        // width: 66.666%;
+
+                        // .article {
+                        //     padding: 0;
+                        //     margin: 2rem auto;
+                        // }
+
+                        // .next-previous {
+                        //     margin: 2rem 0;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- MAIN --- */
+    .outer-wrap-main {
+        .inner-wrap-main {
+            .row {
+                // .region-main {
+                    // margin: 0 auto;
+
+                    // .article {
+                    //     padding: 0;
+                    //     margin: 2rem 0;
+                    // }
+
+                    // .next-previous {
+                    //     margin: 2rem 0;
+                    // }
+                // }
+
+                .region-sidebar-left {
+                    display: block;
+                    #desinax-vgrid.column(6);
+                    // float: left;
+                    // width: 28%;
+                    // padding-top: 2rem;
+                    // padding-left: 5%;
+
+                }
+            }
+        }
+    }
+
+
+
+    /* --- PICTURE @ HOME --- */
+    .route- {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    .region-main {
+                        // width: 60%;
+
+                        .figure {
+
+                            // img {
+                            //     float: right;
+                            //     width: 35rem;
+                            //     margin: 0 0 1rem 1rem;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- PICTURE @ ABOUT --- */
+    .route-om {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    .region-main {
+                        .figure {
+
+                            img {
+                                // clear: both;
+                                // width: 30rem;
+                                // margin: 2rem 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- BYLINE --- */
+        .byline {
+            display: flex;
+            columns: 2;
+            #desinax-vgrid.column(22);
+    
+            figure {
+                padding: 3%;
+                #desinax-vgrid.column(5);
+            }
+            
+            p {
+                display: block;
+                margin: 0 auto;
+                padding: 3%;
+                #desinax-vgrid.column(18);
+            }
+        }
+    }
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/* IPAD & DESKTOP SIZE SCREENS (969 - 1199px width) */
+@media screen and (min-width: 969px) {
+
+    /* --- HEADER --- */
+    .outer-wrap-header {
+        .inner-wrap-header {
+            .row {
+                .region-header {
+
+                    /* SITE-LOGO & TEXT */
+                    .region-header-col-1 {
+                        #desinax-vgrid.column(@columns * 1 / 6);
+
+                        .site-logo-text {
+                            display: inline-block;
+                            #desinax-vgrid.column(@columns / 2);
+                        }
+
+                        .site-logo {
+                            display: inline-block;
+                            #desinax-vgrid.column(@columns / 2);
+                        }
+                    }
+
+                    /* NAVBAR */
+                    .region-header-col-2 {
+                        height: 100%;
+                        #desinax-vgrid.column(@columns * 4 / 5);
+
+                        .rm-navbar {
+                            .my-navbar {
+                            }
+                        }
+                    }
+
+                    /* HAMBURGER MENU */
+                    .region-header-col-3 {
+                        #desinax-vgrid.column(@columns * 1 / 6);
+                    }
+                }
+                
+                .rm-small {
+                    display: none;
+                }
+
+                .site-logo {
+                    display: none;
+                }
+
+
+
+                /* --- BREADCRUMBs --- */
+                .region-breadcrumb {
+                    #desinax-vgrid.column(@columns);
+                    
+                    .breadcrumb-list {
+                        #desinax-vgrid.push(1);
+                        
+                        ul {
+                            li {
+                                #desinax-vgrid.column(5);
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
+    .route-,
+    .route-om,
+    .route-style,
+    .route-testa {
+        .wrap-all {
+            .outer-wrap-main {
+                .inner-wrap-main {
+                    .row {
+                        .region-main {
+                                // display: block;
+                                #desinax-vgrid.column(18);
+                                #desinax-vgrid.push(3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- ROUTE FOR REDOVISNING --- */
+    .route-redovisning,
+    .route-redovisning-kmom01,
+    .route-redovisning-kmom02,
+    .route-redovisning-kmom03,
+    .route-redovisning-kmom04,
+    .route-redovisning-kmom05,
+    .route-redovisning-kmom06,
+    .route-redovisning-kmom10,
+    .route-verktyg,
+    .route-verktyg-kmom01, 
+    .route-verktyg-markdown,
+    .route-verktyg-shortcode,
+    .route-verktyg-frontmatter,
+    .route-verktyg-stylevaljare,
+    .route-verktyg-vyer-och-templatefiler,
+    .route-verktyg-layout-och-regioner,
+    .route-verktyg-kmom02,
+    .route-verktyg-font-awesome,
+    .route-verktyg-kmom03,
+    .route-verktyg-viewport,
+    .route-verktyg-vertikalt-grid,
+    .route-verktyg-horisontellt-typografiskt-grid,
+    .route-verktyg-kmom05,
+    .route-verktyg-bildhantering-med-cimage,
+    .route-verktyg-shortcode-figure,
+    .route-verktyg-less-modul-for-figure,
+    .route-verktyg-bilder-i-text,
+    .route-verktyg-ovrigt, 
+    .route-verktyg-styla-en-route {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    .region-main {
+                        display: inline-block;
+                        #desinax-vgrid.column(12);
+
+                        // .article {
+                        //     padding: 0;
+                        //     margin: 2rem auto;
+                        // }
+
+                        // .next-previous {
+                        //     margin: 2rem 0;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* --- SIDEBAR LEFT --- */
+    .region-sidebar-left {
+        display: block;
+        #desinax-vgrid.column(5);
+        #desinax-vgrid.push(1);
+        // float: left;
+        // width: 25%;
+        // padding-top: 2rem;
+        // padding-left: 5%;
+    }
+    
+
+
+    /* --- PICTURE @ HOME --- */
+    .route- {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    .region-main {
+                        #desinax-vgrid.column(14);
+
+                        .figure {
+
+                            img {
+                                float: right !important;
+                                margin: 0 0 0.5rem 0.5rem;
+                                #desinax-vgrid.column(14);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- PICTURE @ ABOUT --- */
+    .route-om {
+        .outer-wrap-main {
+            .inner-wrap-main {
+                .row {
+                    .region-main {
+                        .figure {
+
+                            img {
+                                clear: both;
+                                #desinax-vgrid.column(14);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* --- BYLINE --- */
+    .byline {
+        #desinax-vgrid.column(@columns);
+        display: flex;
+        columns: 2;
+
+        figure {
+            #desinax-vgrid.column(6);
+            height: 100%;
+            padding: 3%;
+
+            figcaption {
+                text-align: center;
+                #desinax-vgrid.column(@columns);
+            }
+        }
+        
+        p {
+            display: block;
+            #desinax-vgrid.column(18);
+            margin: 0 auto;
+            padding: 3%;
+        }
+    }
+}

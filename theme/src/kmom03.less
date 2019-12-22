@@ -30,22 +30,12 @@
 
 
 
-/* Activate HGRID */
-#desinax-hgrid.activateDefaultTypography();
-
-
-
 /* Show the GRID */
 .hgrid .inner-wrap {
     @gridImage: "../img/magic-number-@{magicNumber}.png";
     #desinax-hgrid.showGrid(@gridImage);
 }
 
-
-
-// Choose fontFamily by overwriting existing variables in "typography-defaults".
-@fontFamilyBody: sans-serif;
-@fontFamilyCode: "dosis";
 
 
 /* Base style to affect HTML elements on a general scale. */
@@ -55,10 +45,10 @@
 
 
 /**
- * Import the VERTICAL GRID. */
- @import "@desinax/vertical-grid/less/grid.less";
- @import "layout/vgrid.less";
- // Default grid, change to fit your requirements.
+* Import the VERTICAL GRID. */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+// Default grid, change to fit your requirements.
 //  @columnWidth:   30;
 //  @gutterWidth:   10;
 //  @columns:       24;
@@ -68,7 +58,7 @@
 
 
 /* Layout style for general structure of header, navbar, main, footer
- * and other regions of the page including route specific styles. */
+* and other regions of the page including route specific styles. */
 // @import "layout/layout.less";
 // @import "layout/layout_kmom02.less";
 // @import "layout/regions.less";     // To add style for ?regions
@@ -82,7 +72,7 @@
 // @import "layout/block.less";
 // @import "layout/toc.less";
 // @import "layout/breadcrumb.less";
-// @import "layout/responsive.less";
+@import "layout/responsive_kmom03.less";
 
 
 
@@ -132,3 +122,6 @@
 @font_weight_p: 300;
 
 
+// Choose fontFamily by overwriting existing variables in "typography-defaults".
+@fontFamilyBody: sans-serif;
+@fontFamilyCode: "dosis";

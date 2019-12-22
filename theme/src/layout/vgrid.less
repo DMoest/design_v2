@@ -37,8 +37,9 @@
 
 
 
-// --- LAYOUT USING VGRID ---
-
+* {
+    box-sizing: border-box;
+}
 
 // --- ROW ---
 .row {
@@ -52,7 +53,7 @@
 
 // --- SETUP GRID SIZE ---
 .inner-wrap {
-    #desinax-vgrid.grid(80%);
+    #desinax-vgrid.grid(100%);
 }
 
 
@@ -76,7 +77,7 @@
     // overflow: auto;
     content: "";
     display: block;
-    // clear: both;
+    clear: both;
 
     .inner-wrap-header {
         #desinax-vgrid.grid(100%);
@@ -84,101 +85,105 @@
         // overflow: auto;
         // height: 100%;
 
-        .region-header {
-            #desinax-vgrid.column(24);
-            // width: 100%;
-            // height: 100%;
-            
-            .region-header-col-1 {
-                display: block;
-                #desinax-vgrid.column(5);
+        .row {
+            margin: 0;
+
+            .region-header {
+                #desinax-vgrid.column(@columns);
+                // width: 100%;
                 // height: 100%;
-                // float:  left;
-
-                .site-logo {
-                    display: block;
-                    #desinax-vgrid.column(10);
-                    // float: left;
-                    // width: 8rem;
-                    // margin: 1rem;
-                    color: @text_color_light;
-                }
-
-                .site-logo-text {
-                    display: inline-block;
-                    #desinax-vgrid.column(10);
-                    // width: auto;
-                    // margin: 3rem 0 3rem 1rem;
                 
-                    a {
-                        cursor: pointer;
-                        display: inline-block;
-                        font-size: @font_size_h1;
-                        font-weight: @font_weight_p;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        color: @text_color_light;
-
-                        .site-logo-text-icon {
-                            display: none;
-                        }
-                    }
-                }
-            }
-
-            /* --- NAVBAR --- */
-            .region-header-col-2 {
-                display: block;
-                #desinax-vgrid.column(14);
-                // height: 100%;
-                // float: left;
-                text-align: center;
-
-
-                .rm-navbar {
+                .region-header-col-1 {
                     display: block;
-                    // width: 100%;
-                    // margin: auto 0;
+                    // height: 100%;
+                    // float:  left;
+
+                    .site-logo {
+                        display: inline-block;
+                        color: @text_color_light;
+                        // float: left;
+                        // width: 8rem;
+                        // margin: 1rem;
+                    }
+
+                    .site-logo-text {
+                        display: inline-block;
+                        // width: auto;
+                        // margin: 3rem 0 3rem 1rem;
                     
-                    .rm-desktop {
-                        list-style: none;
-                        // width: 100%;
-                        // margin: 2.5rem auto;
-                        // padding: 0;
-
-                        li {
+                        a {
+                            cursor: pointer;
                             display: inline-block;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: @text_color_light;
+                            // font-size: @font_size_h1;
+                            // font-weight: @font_weight_p;
 
-                            a {
-                                cursor: pointer;
-                                display: inline-block;
-                                font-size: @font_size_h3;
-                                font-weight: @font_weight_p;
-                                text-decoration: none;
-                                text-transform: uppercase;
-                                text-align: center;
-                                color: @text_color_light;
-                                // width: 100%;
-                                // margin: 1rem auto;
-                                // padding: 0 1rem;
+                            .site-logo-text-icon {
+                                display: none;
                             }
                         }
+                    }
+                }
 
-                        .rm-submenu-button {
-                            display: none;
+                /* --- NAVBAR --- */
+                .region-header-col-2 {
+                    display: block;
+                    text-align: center;
+                    // height: 100%;
+                    // float: left;
+
+
+                    .rm-navbar {
+                        display: block;
+                        // width: 100%;
+                        // margin: auto 0;
+                        
+                        .rm-desktop {
+                            display: block;
+                            list-style: none;
+                            // width: 100%;
+                            // margin: 2.5rem auto;
+                            // padding: 0;
+
+                            li {
+                                display: inline-block;
+
+                                a {
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    text-align: center;
+                                    color: @text_color_light;
+                                    // font-size: @font_size_h3;
+                                    // font-weight: @font_weight_p;
+                                    // width: 100%;
+                                    // margin: 1rem auto;
+                                    // padding: 0 1rem;
+                                }
+                            }
+
+                            .rm-submenu-button {
+                                display: none;
+                            }
                         }
                     }
                 }
-            }
 
-            .region-header-col-3 {
-                display: block;
-                #desinax-vgrid.column(5);
-                // float: left;
+                .region-header-col-3 {
+                    display: block;
+                    // float: left;
 
-                .rm-button {
-                    // width: 3rem;
-                    color: @text_color_light;
+                    .rm-button {
+                        color: @text_color_light;
+                        // width: 3rem;
+                    }
+
+                    .rm-desktop {
+                        display: block;
+                    }
                 }
             }
         }
@@ -200,9 +205,9 @@
             }
 
             .region-main {
-                #desinax-vgrid.column(12);
                 text-align: left;
-                // display: block;
+                #desinax-vgrid.column(12);
+                display: block;
                 // width: 60%;
                 // margin: 0 auto;
 
@@ -220,9 +225,9 @@
 
                 .stylechooser {
                     fieldset {
+                        border-radius: @std_borderRadius;
                         // margin: 3rem 0;
                         // padding: 2rem;
-                        border-radius: @std_borderRadius;
                     }
                 }
             }
@@ -232,7 +237,6 @@
             }
 
             .region-sidebar-left {
-                #desinax-vgrid.column(6);
                 // display: inline-block;
                 // float: left;
                 // width: 23.3%;
@@ -241,11 +245,13 @@
   
                 h4 {
                     display: inline-block;
-                    font-size: @font_size_h4;
                     color: @text_color_dark;
+                    // font-size: @font_size_h4;
                 }
 
                 ul {
+                    margin: 0;
+                    padding: 0;
 
                     li {
                         list-style: none;
@@ -302,7 +308,7 @@
             /* --- NEXT/PREVIOUS links --- */
             .next-previous {
                 #desinax-vgrid.column(@columns);
-                // clear: both;
+                clear: both;
                 // margin: 3rem;
 
                 .next {
@@ -349,7 +355,6 @@
     .figure {
 
         img {
-            #desinax-vgrid.column(12);
             // width: 30rem;
             float: right;
             border-radius: @std_borderRadius;
@@ -364,18 +369,17 @@
     .figure {
 
         img {
-            #desinax-vgrid.column(12);
             float: left;
+            border-radius: @std_borderRadius;
             // width: 30rem;
             // margin: 1rem 1rem 1rem 0;
-            border-radius: @std_borderRadius;
         }
     }
 }
 
 
 
-.figure { 
+.figure {
     p {
         clear: both;
     }
@@ -385,17 +389,17 @@
 
 /* --- FOOTER --- */
 .outer-wrap-footer {
-    #desinax-vgrid.grid(@columns);
+    #desinax-vgrid.grid(100%);
     
     .inner-wrap-footer {
-        #desinax-vgrid.grid(80%);
+        #desinax-vgrid.grid(100%);
     }
 }
 
 .region-footer {
     color: #fff;
     background-color: @color_bg_dark;
-    // clear: both;
+    clear: both;
     // width: 100%;
     // margin: 0 auto;
     // padding: 1rem;
@@ -458,44 +462,36 @@
 
 
 /* --- FLASH --- */
-.inner-wrap {
-    // max-width: 1100px;
-    // margin: 0 auto;
+.inner-wrap-flash {
 
     img {
+        margin: 0;
+        padding: 0;
         #desinax-vgrid.column(@columns);
     }
 }
 
-/* --- COVER PICTURE --- */
-.outer-wrap-flash {
-    #desinax-vgrid.column(@columns);
-    
-    .inner-wrap-flash {
-
-        img {
-        }
-    }
-}
 
 
 /* --- BREADCRUMB-LIST --- */
 .breadcrumb-list {
+    margin: 0;
+    padding: 0;
+    
     ul {
-        // padding: 0;
-        // margin: 0;
-    }
-  
-    li {
-        display: inline-block;
-        list-style: none;
-        // width: 20%;
-        // padding: 0.5rem 0;
-        // margin: 0;
-
-        a {
-            text-decoration: none;
-            color: @text_color_dark;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            // #desinax-vgrid.column(24);
+            a {
+                text-decoration: none;
+                color: @text_color_dark;
+            }
         }
     }
 }
@@ -503,7 +499,7 @@
 
 
 // --- REGIONS ---
-regions .outer-wrap {
+.regions .outer-wrap {
     background-color: #f4e3c9;
     border: 1px solid darken(#f4e3c9, 20%);
 }
@@ -561,678 +557,4 @@ regions .outer-wrap {
             // margin: 1rem auto;
         }
     } 
-}
-
-
-
-// --- RESPONSIVENESS ---
-/* -------------------------------------------------- */
-/* PHONE SIZE SCREENS (0 - 680px width) */
-@media screen and (min-width: 0px) and (max-width: 680px) {
-    
-    /* --- HEADER --- */
-    .outer-wrap-header {
-        .inner-wrap-header {
-            .row {
-                .region-header {
-
-                    /* SITE-LOGO & TEXT */
-                    .region-header-col-1 {
-                        // width: 40%;
-
-                        .site-logo-text {
-                            display: none;
-
-                            a {
-                                display: none;
-                            }
-                        }
-                    }
-
-                    .region-header-col-2 {
-                        // width: 20%;
-
-                        .rm-desktop {
-                            display: none;
-                        }
-                    }
-
-                    .region-header-col-3 {
-                        // width: 40%;
-
-                        .rm-desktop {
-                            display: none;
-                        }
-
-                        .rm-small {
-                            display: block;
-
-                            .rm-button {
-                                // margin: 2.5rem;
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-
-
-
-    /* --- BREADCRUMBs --- */
-    .region-breadcrumb {
-        #desinax-vgrid.column(@columns);
-
-        .breadcrumb-list {
-            ul {
-                li {
-                    // width: 49%;
-                    // padding: 0.5rem;
-                }
-            }
-        }
-    }
-
-
-
-    /* --- MAIN --- */
-    .outer-wrap-main {
-        .inner-wrap-main {
-            .row {
-
-                .region-sidebar-left {
-                    display: block;
-                    clear: both;
-                    // width: 100%;
-                    // margin: 1rem auto;
-                    // padding: 0;
-
-                    h4 {
-                        text-align: center;
-                        // width: 100%;
-                        // margin: 1rem;
-                    }
-
-                    ul {
-                        text-align: center;
-
-                        li {
-                            // margin: 0.5rem auto;
-                        }
-                    }
-                }
-                
-                .region-main {
-                    display: block;
-                    // width: 90%;
-                    // margin: 0 auto;
-
-                    article {
-                        padding: 1rem 0;
-                    }
-
-                    .next-previous {
-                        // margin: 2rem 0;
-                    }
-
-                    .figure {
-
-                        img {
-                            clear: both;
-                            // width: 100%;
-                            // margin: 1rem auto;
-                        }
-                    }
-
-                    /* --- BYLINE --- */
-                    .block {
-                        .byline {
-                            #desinax-vgrid.column(@columns);
-                            // width: 100%;
-                    
-                            figure {
-                                display: block;
-                                #desinax-vgrid.column(@columns);
-                                // width: 100%;
-                                // height: 10rem;
-                                // margin: 2rem auto;
-                            }
-
-                            p {
-                                display: inline-block;
-                                #desinax-vgrid.column(@columns);
-                                // width: 100%;
-                                // padding: 3rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- FOOTER --- */
-    .outer-wrap-footer {
-        .inner-wrap-footer {
-            .row {
-                #desinax-vgrid.column(@columns);
-
-                .region-footer {
-
-                    // /* SITE-LOGO & TEXT */
-                    // .region-footer-col-1 {
-                    //     width: 40%;
-
-
-                    // }
-
-                    // .region-footer-col-2 {
-                    //     width: 20%;
-
-                    // }
-
-                    // .region-footer-col-3 {
-                    //     width: 40%;
-                    // }
-
-                }
-            }
-        }
-    }
-}
-
-
-
-/* -------------------------------------------------- */
-
-
-
-/* -------------------------------------------------- */
-/* PHONE & IPAD SIZE SCREENS (681 - 968px width) */
-@media screen and (min-width: 681px) and (max-width: 968px) {
-
-    /* --- HEADER --- */
-    .region-header {
-
-        /* SITE-LOGO & TEXT */
-        .region-header-col-1 {
-            #desinax-vgrid.column(10);
-            // width: 40%;
-
-            .site-logo-text {
-                display: inline-block;
-
-                a {
-                    display: inline-block;
-                }
-            }
-        }
-
-        /* NAVBAR */
-        .region-header-col-2 {
-            #desinax-vgrid.column(10);
-            // width: 40%;
-
-            .rm-desktop {
-                display: none;
-            }
-        }
-
-        /* HAMBURGER MENU */
-        .region-header-col-3 {
-            #desinax-vgrid.column(5);
-            // width: 20%;
-            
-            .rm-desktop {
-                display: block;
-            }
-            
-            .rm-button {
-                // margin: 2.5rem;
-            }
-        }
-    }
-    
-    .rm-small {
-        display: none;
-    }
-
-    .site-logo {
-        display: none;
-    }
-
-
-
-    /* --- BREADCRUMBs --- */
-    .region-breadcrumb {
-        #desinax-vgrid.column(@columns);
-
-        .breadcrumb-list {
-            ul {
-                li {
-                    // width: 28%;
-                    // padding: 0.5rem;
-                }
-            }
-        }
-    }
-
-
-
-    /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
-    .route-,
-    .route-om,
-    .route-style,
-    .route-testa  {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    #desinax-vgrid.column(@columns);
-
-                    .region-main {
-                        display: block;
-                        #desinax-vgrid.column(18);
-                        // width: 75%;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- ROUTE FOR REDOVISNING --- */
-    .route-redovisning,
-    .route-redovisning-kmom01,
-    .route-redovisning-kmom02,
-    .route-redovisning-kmom03,
-    .route-redovisning-kmom04,
-    .route-redovisning-kmom05,
-    .route-redovisning-kmom06,
-    .route-redovisning-kmom10,
-    .route-verktyg,
-    .route-verktyg-kmom01, 
-    .route-verktyg-markdown,
-    .route-verktyg-shortcode,
-    .route-verktyg-frontmatter,
-    .route-verktyg-stylevaljare,
-    .route-verktyg-vyer-och-templatefiler,
-    .route-verktyg-layout-och-regioner,
-    .route-verktyg-kmom02,
-    .route-verktyg-font-awesome,
-    .route-verktyg-kmom03,
-    .route-verktyg-viewport,
-    .route-verktyg-vertikalt-grid,
-    .route-verktyg-horisontellt-typografiskt-grid,
-    .route-verktyg-kmom05,
-    .route-verktyg-bildhantering-med-cimage,
-    .route-verktyg-shortcode-figure,
-    .route-verktyg-less-modul-for-figure,
-    .route-verktyg-bilder-i-text,
-    .route-verktyg-ovrigt, 
-    .route-verktyg-styla-en-route {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    #desinax-vgrid.column(@columns);
-
-                    .region-main {
-                        display: inline-block;
-                        #desinax-vgrid.column(16);
-                        // width: 66.666%;
-
-                        .article {
-                            // padding: 0;
-                            // margin: 2rem auto;
-                        }
-
-                        .next-previous {
-                            // margin: 2rem 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- MAIN --- */
-    .outer-wrap-main {
-        .inner-wrap-main {
-            .row {
-                .region-main {
-                    // margin: 0 auto;
-
-                    .article {
-                        // padding: 0;
-                        // margin: 2rem 0;
-                    }
-
-                    .next-previous {
-                        // margin: 2rem 0;
-                    }
-                }
-
-                .region-sidebar-left {
-                    display: block;
-                    #desinax-vgrid.column(6);
-                    // float: left;
-                    // width: 28%;
-                    // padding-top: 2rem;
-                    // padding-left: 5%;
-
-                }
-            }
-        }
-    }
-
-
-
-    /* --- PICTURE @ HOME --- */
-    .route- {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    .region-main {
-                        // width: 60%;
-
-                        .figure {
-
-                            img {
-                                // float: right;
-                                // width: 35rem;
-                                // margin: 0 0 1rem 1rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- PICTURE @ ABOUT --- */
-    .route-om {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    .region-main {
-                        .figure {
-
-                            img {
-                                // clear: both;
-                                // width: 30rem;
-                                // margin: 2rem 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- BYLINE --- */
-    .block {
-        .byline {
-            display: flex;
-            columns: 2;
-            #desinax-vgrid.column(22);
-            // width: 90%;
-    
-            figure {
-                #desinax-vgrid.column(5);
-                // width: 20%;
-                // height: 100%;
-                // margin: 5%;
-            }
-            
-            p {
-                display: block;
-                #desinax-vgrid.column(17);
-                // width: 70%;
-                // height: 60%;
-                // margin: 0 auto;
-                // padding: 5%;
-            }
-        }
-    }
-}
-/* -------------------------------------------------- */
-
-
-
-/* -------------------------------------------------- */
-/* IPAD & DESKTOP SIZE SCREENS (969 - 1199px width) */
-@media screen and (min-width: 969px) {
-
-    /* --- HEADER --- */
-    .region-header {
-
-        /* SITE-LOGO & TEXT */
-        .region-header-col-1 {
-            #desinax-vgrid.column(5);
-            // width: 20%;
-
-            .site-logo-text {
-                display: inline-block;
-
-                a {
-                   display: inline-block;
-                }
-            }
-        }
-
-        /* NAVBAR */
-        .region-header-col-2 {
-            #desinax-vgrid.column(14);
-            // width: 60%;
-
-            .rm-desktop {
-                display: block;
-            }
-        }
-
-        /* HAMBURGER MENU */
-        .region-header-col-3 {
-            #desinax-vgrid.column(5);
-            // width: 20%;
-            
-            .rm-desktop {
-                display: block;
-            }
-            
-            .rm-button {
-                // margin: 2.5rem;
-            }
-        }
-    }
-    
-    .rm-small {
-        display: none;
-    }
-
-    .site-logo {
-        display: none;
-    }
-
-
-
-    /* --- BREADCRUMBs --- */
-    .region-breadcrumb {
-        #desinax-vgrid.column(@columns);
-        
-        .breadcrumb-list {    
-            ul {
-                li {
-                    #desinax-vgrid.column(6);
-                    // width: 25%;
-                    // padding: 0.5rem;
-                }
-            }
-        }
-    }
-
-
-
-    /* --- ROUTE FOR HOME, ABOUT, STYLE & TEST --- */
-    .route-,
-    .route-om,
-    .route-style,
-    .route-testa {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    .region-main {
-                        display: block;
-                        #desinax-vgrid.column(14);
-                        // width: 60%;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    /* --- ROUTE FOR REDOVISNING --- */
-    .route-redovisning,
-    .route-redovisning-kmom01,
-    .route-redovisning-kmom02,
-    .route-redovisning-kmom03,
-    .route-redovisning-kmom04,
-    .route-redovisning-kmom05,
-    .route-redovisning-kmom06,
-    .route-redovisning-kmom10,
-    .route-verktyg,
-    .route-verktyg-kmom01, 
-    .route-verktyg-markdown,
-    .route-verktyg-shortcode,
-    .route-verktyg-frontmatter,
-    .route-verktyg-stylevaljare,
-    .route-verktyg-vyer-och-templatefiler,
-    .route-verktyg-layout-och-regioner,
-    .route-verktyg-kmom02,
-    .route-verktyg-font-awesome,
-    .route-verktyg-kmom03,
-    .route-verktyg-viewport,
-    .route-verktyg-vertikalt-grid,
-    .route-verktyg-horisontellt-typografiskt-grid,
-    .route-verktyg-kmom05,
-    .route-verktyg-bildhantering-med-cimage,
-    .route-verktyg-shortcode-figure,
-    .route-verktyg-less-modul-for-figure,
-    .route-verktyg-bilder-i-text,
-    .route-verktyg-ovrigt, 
-    .route-verktyg-styla-en-route {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    .region-main {
-                        display: inline-block;
-                        #desinax-vgrid.column(12);
-                        // width: 50%;
-
-                        .article {
-                            // padding: 0;
-                            // margin: 2rem auto;
-                        }
-
-                        .next-previous {
-                            // margin: 2rem 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-    /* --- SIDEBAR LEFT --- */
-    .region-sidebar-left {
-        display: block;
-        #desinax-vgrid.column(6);
-        // float: left;
-        // width: 25%;
-        // padding-top: 2rem;
-        // padding-left: 5%;
-    }
-    
-
-
-    /* --- PICTURE @ HOME --- */
-    .route- {
-        .outer-wrap-main {
-            .inner-wrap-main {
-                .row {
-                    .region-main {
-                        // width: 60%;
-
-                        .figure {
-
-                            img {
-                                // float: right;
-                                // width: 35rem;
-                                // margin: 0 0 1rem 1rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-        /* --- PICTURE @ ABOUT --- */
-        .route-om {
-            .outer-wrap-main {
-                .inner-wrap-main {
-                    .row {
-                        .region-main {
-                            .figure {
-
-                                img {
-                                    clear: both;
-                                    // width: 30rem;
-                                    // margin: 2rem 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-
-
-    /* --- BYLINE --- */
-    .block {
-        .byline {
-            #desinax-vgrid.column(22);
-            // width: 90%;
-            display: flex;
-            columns: 2;
-    
-            figure {
-                #desinax-vgrid.column(5);
-                // width: 20%;
-                // height: 100%;
-                // margin: 5%;
-            }
-            
-            p {
-                display: block;
-                #desinax-vgrid.column(17);
-                // width: 70%;
-                // height: 60%;
-                // margin: 0 auto;
-                // padding: 5%;
-            }
-        }
-    }
 }
